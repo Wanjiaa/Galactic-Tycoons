@@ -1,0 +1,110 @@
+// ========================================
+// GALACTIC TYCOONS - Layout
+// ========================================
+
+.gt-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.gt-page-header {
+  margin-bottom: 32px;
+
+  .back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+
+    &:hover {
+      background: rgba(110, 231, 183, 0.1);
+      border-color: var(--accent);
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+.gt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gt-layout-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gt-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.gt-header {
+  margin-bottom: 48px;
+
+  .back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    transition: all 0.2s;
+
+    &:hover {
+      background: rgba(110, 231, 183, 0.1);
+      border-color: var(--accent);
+    }
+  }
+
+  .header-content {
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0;
+    }
+  }
+}
+
+.gt-footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+
+  p {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0;
+  }
+}
+

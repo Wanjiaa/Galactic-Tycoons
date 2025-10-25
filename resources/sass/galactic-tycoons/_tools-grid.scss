@@ -1,0 +1,15 @@
+// ========================================
+// GALACTIC TYCOONS - Tools Grid
+// ========================================
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 48px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+

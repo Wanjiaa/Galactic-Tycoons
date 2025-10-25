@@ -1,0 +1,25 @@
+// ========================================
+// GALACTIC TYCOONS - Forms
+// ========================================
+
+input, textarea, select {
+  background: #0f1116;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+

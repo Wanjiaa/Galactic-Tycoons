@@ -1,0 +1,89 @@
+// ========================================
+// GALACTIC TYCOONS - Badges
+// ========================================
+
+.workforce-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 4px;
+
+  &.provider {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+  }
+
+  &.provider-tech {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+
+  &.provider-eng {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+  }
+
+  &.provider-sci {
+    background: rgba(234, 179, 8, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+  }
+
+  &.consumer {
+    background: rgba(251, 146, 60, 0.15);
+    color: #fb923c;
+    border: 1px solid rgba(251, 146, 60, 0.3);
+  }
+
+  &.consumer-tech {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+
+  &.consumer-eng {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+  }
+
+  &.consumer-sci {
+    background: rgba(234, 179, 8, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+  }
+}
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(110, 231, 183, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(110, 231, 183, 0.2);
+}
+
+.chip {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 2px;
+  background: var(--card-hover);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+}
+

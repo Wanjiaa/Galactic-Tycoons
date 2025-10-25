@@ -1,0 +1,185 @@
+// ========================================
+// GALACTIC TYCOONS - Cards
+// ========================================
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+.info-card {
+  background: rgba(110, 231, 183, 0.05);
+  border: 1px solid rgba(110, 231, 183, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+
+  h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: var(--accent);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+  }
+
+  p {
+    margin: 8px 0;
+    color: var(--muted);
+  }
+}
+
+.tool-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    background: var(--card-hover);
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(110, 231, 183, 0.1);
+  }
+
+  .tool-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .tool-title {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+  }
+
+  .tool-description {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 20px 0;
+    flex: 1;
+  }
+
+  .tool-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: #082c1f;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background: var(--accent-dark);
+    }
+  }
+}
+
+.quick-links-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--line);
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .quick-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--card-hover);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      border-color: var(--accent);
+      background: rgba(110, 231, 183, 0.05);
+    }
+
+    &.active {
+      border-color: var(--accent);
+      background: rgba(110, 231, 183, 0.1);
+    }
+
+    .icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    div {
+      flex: 1;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 14px;
+    }
+
+    small {
+      color: var(--muted);
+      font-size: 12px;
+    }
+  }
+}
+

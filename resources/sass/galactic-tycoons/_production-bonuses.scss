@@ -1,0 +1,194 @@
+// ========================================
+// PRODUCTION BONUSES CALCULATOR
+// ========================================
+
+.production-bonus-calculator {
+  .upkeep-intro {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+}
+
+.production-bonus-grid {
+  .muted {
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.production-bonus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.production-bonus-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .bonus-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+
+    h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .bonus-total {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--success);
+      padding: 4px 12px;
+      background: rgba(46, 213, 115, 0.1);
+      border-radius: 8px;
+
+      &.medium-bonus {
+        color: #f39c12;
+        background: rgba(243, 156, 18, 0.1);
+      }
+
+      &.high-bonus {
+        color: #e74c3c;
+        background: rgba(231, 76, 60, 0.1);
+      }
+    }
+  }
+
+  .bonus-breakdown {
+    .bonus-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      font-size: 14px;
+
+      .bonus-label {
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .bonus-value {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      &.base {
+        .bonus-value {
+          color: var(--primary);
+        }
+      }
+
+      &.essential {
+        .bonus-value {
+          color: #e74c3c;
+        }
+      }
+
+      &.non-essential {
+        .bonus-value {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+
+  .bonus-consumables-list {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+
+    .bonus-consumable-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 13px;
+
+      .consumable-name {
+        color: var(--text);
+        font-weight: 500;
+      }
+
+      .consumable-badge {
+        font-size: 11px;
+        padding: 2px 8px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+
+        &.essential {
+          background: rgba(231, 76, 60, 0.15);
+          color: #e74c3c;
+        }
+
+        &.non-essential {
+          background: rgba(243, 156, 18, 0.15);
+          color: #f39c12;
+        }
+      }
+    }
+  }
+}
+
+// Dark mode adjustments
+@media (prefers-color-scheme: dark) {
+  .production-bonus-card {
+    background: #1a1f2e;
+    border-color: #2d3748;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .bonus-card-header {
+      border-bottom-color: #2d3748;
+
+      h4 {
+        color: #e2e8f0;
+      }
+    }
+
+    .bonus-breakdown {
+      .bonus-item {
+        .bonus-label {
+          color: #a0aec0;
+        }
+
+        .bonus-value {
+          color: #e2e8f0;
+        }
+      }
+    }
+
+    .bonus-consumables-list {
+      border-top-color: #2d3748;
+
+      .bonus-consumable-item {
+        .consumable-name {
+          color: #e2e8f0;
+        }
+      }
+    }
+  }
+}
+

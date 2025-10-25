@@ -1,0 +1,3705 @@
+[
+    {
+        "output": "Iron Ore",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Silica",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Copper Ore",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Oxygen",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Gas Collector",
+        "ingredients": []
+    },
+    {
+        "output": "Iron",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Iron Ore",
+                "amount": 5
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Copper",
+        "qtyOut": 1,
+        "craftTime": 3600,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Copper Ore",
+                "amount": 2
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 2
+            },
+            {
+                "resource": "Flux",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Concrete",
+        "qtyOut": 12,
+        "craftTime": 2700,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Limestone",
+                "amount": 4
+            },
+            {
+                "resource": "Silica",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Hydrogen Fuel",
+        "qtyOut": 8,
+        "craftTime": 5400,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 1
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 6
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Ale",
+        "qtyOut": 13,
+        "craftTime": 4500,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Grain",
+                "amount": 20
+            },
+            {
+                "resource": "Drinking Water",
+                "amount": 12
+            }
+        ]
+    },
+    {
+        "output": "Water",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Pump",
+        "ingredients": []
+    },
+    {
+        "output": "Rations",
+        "qtyOut": 20,
+        "craftTime": 4920,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Fruits",
+                "amount": 4
+            },
+            {
+                "resource": "Vegetables",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Tesserite",
+        "qtyOut": 35,
+        "craftTime": 11700,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            },
+            {
+                "resource": "Titanium Carbide Drill",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Bioxene",
+        "qtyOut": 35,
+        "craftTime": 12600,
+        "machine": "Advanced Gas Collector",
+        "ingredients": [
+            {
+                "resource": "Filtration System",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Hydrogen",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Gas Collector",
+        "ingredients": []
+    },
+    {
+        "output": "Tools",
+        "qtyOut": 10,
+        "craftTime": 4080,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 1
+            },
+            {
+                "resource": "Wood",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Neoplast",
+        "qtyOut": 25,
+        "craftTime": 4500,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 2
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Nitrogen",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Antimatter",
+        "qtyOut": 1,
+        "craftTime": 10800,
+        "machine": "Exotic Matter Lab",
+        "ingredients": [
+            {
+                "resource": "Hydrogen",
+                "amount": 5
+            },
+            {
+                "resource": "Kryon",
+                "amount": 5
+            },
+            {
+                "resource": "Quadranium",
+                "amount": 1
+            },
+            {
+                "resource": "Antimatter Containment",
+                "amount": 1
+            },
+            {
+                "resource": "Superconducting Coil",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Nitrogen",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Gas Collector",
+        "ingredients": []
+    },
+    {
+        "output": "Construction Tools",
+        "qtyOut": 5,
+        "craftTime": 3600,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 1
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "output": "Glass",
+        "qtyOut": 8,
+        "craftTime": 3600,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Limestone",
+                "amount": 3
+            },
+            {
+                "resource": "Silica",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Fruits",
+        "qtyOut": 11,
+        "craftTime": 5400,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Vegetables",
+        "qtyOut": 11,
+        "craftTime": 4500,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 9
+            }
+        ]
+    },
+    {
+        "output": "Construction Kit",
+        "qtyOut": 3,
+        "craftTime": 11700,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Polyethylene",
+                "amount": 50
+            },
+            {
+                "resource": "Construction Tools",
+                "amount": 7
+            },
+            {
+                "resource": "Construction Vehicle",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Limestone",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Steel",
+        "qtyOut": 2,
+        "craftTime": 5400,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 2
+            },
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 4
+            },
+            {
+                "resource": "Flux",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Fertilizer",
+        "qtyOut": 20,
+        "craftTime": 3600,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Limestone",
+                "amount": 4
+            },
+            {
+                "resource": "Nitrogen",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Fruits",
+        "qtyOut": 13,
+        "craftTime": 4500,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 7
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Vegetables",
+        "qtyOut": 16,
+        "craftTime": 5400,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 10
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Drinking Water",
+        "qtyOut": 30,
+        "craftTime": 3600,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 11
+            }
+        ]
+    },
+    {
+        "output": "Grain",
+        "qtyOut": 25,
+        "craftTime": 4500,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Cows",
+        "qtyOut": 3,
+        "craftTime": 9000,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Grain",
+                "amount": 40
+            },
+            {
+                "resource": "Water",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Meat",
+        "qtyOut": 16,
+        "craftTime": 5400,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Cows",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Rations",
+        "qtyOut": 20,
+        "craftTime": 4920,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Meat",
+                "amount": 4
+            },
+            {
+                "resource": "Vegetables",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Fine Rations",
+        "qtyOut": 12,
+        "craftTime": 4500,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Fruits",
+                "amount": 4
+            },
+            {
+                "resource": "Meat",
+                "amount": 4
+            },
+            {
+                "resource": "Vegetables",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Cotton",
+        "qtyOut": 14,
+        "craftTime": 5400,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Uranium Ore",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Polyethylene",
+        "qtyOut": 50,
+        "craftTime": 3600,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 2
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Flux",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Limestone",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Aluminium Ore",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Mine",
+        "ingredients": []
+    },
+    {
+        "output": "Aluminium",
+        "qtyOut": 2,
+        "craftTime": 5400,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Aluminium Ore",
+                "amount": 5
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Antimatter Containment",
+        "qtyOut": 2,
+        "craftTime": 9000,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Argon",
+                "amount": 2
+            },
+            {
+                "resource": "Starglass",
+                "amount": 1
+            },
+            {
+                "resource": "Battery",
+                "amount": 1
+            },
+            {
+                "resource": "Superconducting Coil",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Titanium Ore",
+        "qtyOut": 28,
+        "craftTime": 12600,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Drill",
+                "amount": 2
+            },
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Titanium",
+        "qtyOut": 1,
+        "craftTime": 4500,
+        "machine": "Foundry",
+        "ingredients": [
+            {
+                "resource": "Titanium Ore",
+                "amount": 2
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            },
+            {
+                "resource": "Flux",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Exosuit",
+        "qtyOut": 5,
+        "craftTime": 5400,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Kevlar",
+                "amount": 1
+            },
+            {
+                "resource": "Electric Motor",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "TEMP",
+        "qtyOut": 1,
+        "craftTime": 3600,
+        "machine": "Semiconductor Foundry",
+        "ingredients": []
+    },
+    {
+        "output": "Advanced Tools",
+        "qtyOut": 15,
+        "craftTime": 6300,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 3
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 10
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Wood",
+        "qtyOut": 13,
+        "craftTime": 9000,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Carbon",
+        "qtyOut": 4,
+        "craftTime": 5400,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Wood",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Leather",
+        "qtyOut": 12,
+        "craftTime": 3600,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Cows",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Workwear",
+        "qtyOut": 10,
+        "craftTime": 3600,
+        "machine": "Textile Mill",
+        "ingredients": [
+            {
+                "resource": "Leather",
+                "amount": 3
+            },
+            {
+                "resource": "Fabric",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Fabric",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Textile Mill",
+        "ingredients": [
+            {
+                "resource": "Cotton",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Fabric",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Textile Mill",
+        "ingredients": [
+            {
+                "resource": "Polyethylene",
+                "amount": 30
+            }
+        ]
+    },
+    {
+        "output": "Coffee Beans",
+        "qtyOut": 12,
+        "craftTime": 6300,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Coffee",
+        "qtyOut": 7,
+        "craftTime": 4500,
+        "machine": "Culinary Studio",
+        "ingredients": [
+            {
+                "resource": "Milk",
+                "amount": 2
+            },
+            {
+                "resource": "Coffee Beans",
+                "amount": 4
+            },
+            {
+                "resource": "Drinking Water",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Construction Vehicle",
+        "qtyOut": 1,
+        "craftTime": 9000,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 2
+            },
+            {
+                "resource": "Fabric",
+                "amount": 6
+            },
+            {
+                "resource": "Rubber",
+                "amount": 10
+            },
+            {
+                "resource": "Combustion Engine",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Rubber",
+        "qtyOut": 30,
+        "craftTime": 5400,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Combustion Engine",
+        "qtyOut": 2,
+        "craftTime": 5400,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Ethanol",
+                "amount": 10
+            },
+            {
+                "resource": "Lubricant",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Ethanol",
+        "qtyOut": 25,
+        "craftTime": 4500,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 5
+            },
+            {
+                "resource": "Water",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Lubricant",
+        "qtyOut": 40,
+        "craftTime": 4500,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Hydrogen",
+                "amount": 4
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 20
+            },
+            {
+                "resource": "Ethanol",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Grain",
+        "qtyOut": 30,
+        "craftTime": 3600,
+        "machine": "Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 5
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Lithium",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Iron Ore",
+                "amount": 3
+            },
+            {
+                "resource": "Water",
+                "amount": 3
+            },
+            {
+                "resource": "Sulfuric Acid",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Battery",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Copper",
+                "amount": 1
+            },
+            {
+                "resource": "Lithium",
+                "amount": 1
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "output": "Sulfuric Acid",
+        "qtyOut": 20,
+        "craftTime": 7200,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Copper Ore",
+                "amount": 2
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 5
+            },
+            {
+                "resource": "Water",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Electric Motor",
+        "qtyOut": 3,
+        "craftTime": 6300,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 2
+            },
+            {
+                "resource": "Lubricant",
+                "amount": 2
+            },
+            {
+                "resource": "Battery",
+                "amount": 1
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 7
+            }
+        ]
+    },
+    {
+        "output": "Copper Wire",
+        "qtyOut": 20,
+        "craftTime": 3600,
+        "machine": "Welding Plant",
+        "ingredients": [
+            {
+                "resource": "Copper",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Electronic Circuit",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Semiconductor Foundry",
+        "ingredients": [
+            {
+                "resource": "Polyethylene",
+                "amount": 10
+            },
+            {
+                "resource": "Transistor",
+                "amount": 10
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Consumer Electronics",
+        "qtyOut": 2,
+        "craftTime": 3600,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Glass",
+                "amount": 2
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 15
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Research Data",
+        "qtyOut": 1,
+        "craftTime": 9000,
+        "machine": "Survey Station",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 1
+            },
+            {
+                "resource": "Concrete",
+                "amount": 5
+            },
+            {
+                "resource": "Office Supplies",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Office Supplies",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Wood",
+                "amount": 2
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Research Data",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Survey Station",
+        "ingredients": [
+            {
+                "resource": "Fruits",
+                "amount": 3
+            },
+            {
+                "resource": "Grain",
+                "amount": 10
+            },
+            {
+                "resource": "Vegetables",
+                "amount": 3
+            },
+            {
+                "resource": "Office Supplies",
+                "amount": 3
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Research Data",
+        "qtyOut": 1,
+        "craftTime": 9900,
+        "machine": "Survey Station",
+        "ingredients": [
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 2
+            },
+            {
+                "resource": "Nitrogen",
+                "amount": 1
+            },
+            {
+                "resource": "Office Supplies",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Milk",
+        "qtyOut": 25,
+        "craftTime": 4500,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Cows",
+                "amount": 1
+            },
+            {
+                "resource": "Grain",
+                "amount": 10
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Composite Truss",
+        "qtyOut": 5,
+        "craftTime": 12000,
+        "machine": "Welding Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Pipes",
+        "qtyOut": 5,
+        "craftTime": 3600,
+        "machine": "Welding Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Pipes",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Polyethylene",
+                "amount": 25
+            }
+        ]
+    },
+    {
+        "output": "Argon",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Gas Collector",
+        "ingredients": []
+    },
+    {
+        "output": "Kryon",
+        "qtyOut": 35,
+        "craftTime": 12600,
+        "machine": "Advanced Gas Collector",
+        "ingredients": [
+            {
+                "resource": "Filtration System",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Coolant",
+        "qtyOut": 20,
+        "craftTime": 3600,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Water",
+                "amount": 3
+            },
+            {
+                "resource": "Nitrogen",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Epoxy",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Nitrogen",
+                "amount": 1
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 3
+            },
+            {
+                "resource": "Ethanol",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Fission Fuel",
+        "qtyOut": 1,
+        "craftTime": 7200,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 1
+            },
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Uranium Ore",
+                "amount": 3
+            },
+            {
+                "resource": "Coolant",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Advanced Research Data",
+        "qtyOut": 1,
+        "craftTime": 15300,
+        "machine": "Laboratory",
+        "ingredients": [
+            {
+                "resource": "Copper",
+                "amount": 1
+            },
+            {
+                "resource": "Coolant",
+                "amount": 5
+            },
+            {
+                "resource": "Consumer Electronics",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Kevlar",
+        "qtyOut": 10,
+        "craftTime": 9000,
+        "machine": "Textile Mill",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 10
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Platinum Ore",
+        "qtyOut": 28,
+        "craftTime": 12600,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Drill",
+                "amount": 2
+            },
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Platinum",
+        "qtyOut": 1,
+        "craftTime": 5400,
+        "machine": "Foundry",
+        "ingredients": [
+            {
+                "resource": "Platinum Ore",
+                "amount": 2
+            },
+            {
+                "resource": "Nitrogen",
+                "amount": 1
+            },
+            {
+                "resource": "Argon",
+                "amount": 1
+            },
+            {
+                "resource": "Flux",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Graphene",
+        "qtyOut": 7,
+        "craftTime": 4500,
+        "machine": "Nanomaterial Lab",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Argon",
+                "amount": 3
+            },
+            {
+                "resource": "Coolant",
+                "amount": 5
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Carbon Nanotubes",
+        "qtyOut": 6,
+        "craftTime": 7200,
+        "machine": "Nanomaterial Lab",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Carbon",
+                "amount": 3
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Argon",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Aerogel",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Silica",
+                "amount": 4
+            },
+            {
+                "resource": "Water",
+                "amount": 2
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Reinforced Glass",
+        "qtyOut": 6,
+        "craftTime": 4500,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Nitrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Glass",
+                "amount": 6
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Color Compound",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Refinery",
+        "ingredients": [
+            {
+                "resource": "Fruits",
+                "amount": 6
+            },
+            {
+                "resource": "Grain",
+                "amount": 10
+            },
+            {
+                "resource": "Ethanol",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Mining Vehicle",
+        "qtyOut": 1,
+        "craftTime": 5400,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Rubber",
+                "amount": 10
+            },
+            {
+                "resource": "Combustion Engine",
+                "amount": 1
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Drill",
+        "qtyOut": 2,
+        "craftTime": 5400,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Lubricant",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Titanium Carbide Drill",
+        "qtyOut": 3,
+        "craftTime": 7200,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Carbon Nanotubes",
+                "amount": 1
+            },
+            {
+                "resource": "Lubricant",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Quadranium",
+        "qtyOut": 1,
+        "craftTime": 2700,
+        "machine": "Exotic Matter Lab",
+        "ingredients": [
+            {
+                "resource": "Tesserite",
+                "amount": 1
+            },
+            {
+                "resource": "Kryon",
+                "amount": 1
+            },
+            {
+                "resource": "Sulfuric Acid",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Research Data",
+        "qtyOut": 1,
+        "craftTime": 7200,
+        "machine": "Survey Station",
+        "ingredients": [
+            {
+                "resource": "Office Supplies",
+                "amount": 4
+            },
+            {
+                "resource": "Tools",
+                "amount": 5
+            },
+            {
+                "resource": "Polyethylene",
+                "amount": 20
+            }
+        ]
+    },
+    {
+        "output": "Prefab Kit",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 2
+            },
+            {
+                "resource": "Concrete",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Amenities",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Wood",
+                "amount": 3
+            },
+            {
+                "resource": "Glass",
+                "amount": 4
+            },
+            {
+                "resource": "Pipes",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Laboratory Suit",
+        "qtyOut": 7,
+        "craftTime": 18000,
+        "machine": "Textile Mill",
+        "ingredients": [
+            {
+                "resource": "Biopolyne",
+                "amount": 2
+            },
+            {
+                "resource": "Color Compound",
+                "amount": 3
+            },
+            {
+                "resource": "VR Headset",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Spectra Modulator",
+        "qtyOut": 8,
+        "craftTime": 6300,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Platinum",
+                "amount": 1
+            },
+            {
+                "resource": "Reinforced Glass",
+                "amount": 4
+            },
+            {
+                "resource": "Carbon Nanotubes",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Advanced Circuit Board",
+        "qtyOut": 2,
+        "craftTime": 6300,
+        "machine": "Semiconductor Foundry",
+        "ingredients": [
+            {
+                "resource": "Neoplast Sheet",
+                "amount": 1
+            },
+            {
+                "resource": "Chip",
+                "amount": 2
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Graphenium Wire",
+        "qtyOut": 8,
+        "craftTime": 9000,
+        "machine": "Advanced Materials Lab",
+        "ingredients": [
+            {
+                "resource": "Kryon",
+                "amount": 5
+            },
+            {
+                "resource": "Graphenium",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Molecular Fusion Kit",
+        "qtyOut": 8,
+        "craftTime": 12600,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Bioxene",
+                "amount": 3
+            },
+            {
+                "resource": "Consumer Electronics",
+                "amount": 2
+            },
+            {
+                "resource": "Battery",
+                "amount": 2
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 10
+            },
+            {
+                "resource": "Heat Shielding",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Robot",
+        "qtyOut": 3,
+        "craftTime": 9000,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 3
+            },
+            {
+                "resource": "Graphene",
+                "amount": 2
+            },
+            {
+                "resource": "Electric Motor",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Radiation Shielding",
+        "qtyOut": 1,
+        "craftTime": 4500,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Aeridium",
+                "amount": 1
+            },
+            {
+                "resource": "Kevlar",
+                "amount": 2
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Life Support System",
+        "qtyOut": 1,
+        "craftTime": 3600,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 1
+            },
+            {
+                "resource": "Coolant",
+                "amount": 8
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Apex Research Data",
+        "qtyOut": 1,
+        "craftTime": 14400,
+        "machine": "Science Institute",
+        "ingredients": [
+            {
+                "resource": "Bioxene",
+                "amount": 2
+            },
+            {
+                "resource": "Nanopolyne",
+                "amount": 6
+            },
+            {
+                "resource": "Titanium Carbide Drill",
+                "amount": 1
+            },
+            {
+                "resource": "VR Headset",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Welding Kit",
+        "qtyOut": 2,
+        "craftTime": 4500,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Iron",
+                "amount": 1
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Oxygen",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Hull Plate",
+        "qtyOut": 1,
+        "craftTime": 12600,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Truss",
+                "amount": 2
+            },
+            {
+                "resource": "Welding Kit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Cargo Bay Segment",
+        "qtyOut": 1,
+        "craftTime": 21600,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Truss",
+                "amount": 5
+            },
+            {
+                "resource": "Reinforced Glass",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Truss",
+        "qtyOut": 4,
+        "craftTime": 5400,
+        "machine": "Welding Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Welding Kit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Fuel Tank Segment",
+        "qtyOut": 1,
+        "craftTime": 21600,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Pressure Sealant Kit",
+                "amount": 1
+            },
+            {
+                "resource": "Truss",
+                "amount": 3
+            },
+            {
+                "resource": "Pump",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Pump",
+        "qtyOut": 2,
+        "craftTime": 4500,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Glass",
+                "amount": 1
+            },
+            {
+                "resource": "Pipes",
+                "amount": 2
+            },
+            {
+                "resource": "Lubricant",
+                "amount": 5
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Heat Shielding",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 10
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Pressure Sealant Kit",
+        "qtyOut": 1,
+        "craftTime": 3600,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Insulation Panels",
+                "amount": 1
+            },
+            {
+                "resource": "Rubber",
+                "amount": 5
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Cooling System",
+        "qtyOut": 3,
+        "craftTime": 7200,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Copper",
+                "amount": 1
+            },
+            {
+                "resource": "Insulation Panels",
+                "amount": 1
+            },
+            {
+                "resource": "Coolant",
+                "amount": 15
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Sensor Array",
+        "qtyOut": 1,
+        "craftTime": 13500,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Platinum",
+                "amount": 1
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 20
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Shuttle Bridge",
+        "qtyOut": 1,
+        "craftTime": 54000,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Reinforced Glass",
+                "amount": 20
+            },
+            {
+                "resource": "Life Support System",
+                "amount": 2
+            },
+            {
+                "resource": "Control Console",
+                "amount": 3
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "FTL Field Controller",
+        "qtyOut": 1,
+        "craftTime": 18000,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Aerogel",
+                "amount": 10
+            },
+            {
+                "resource": "Control Console",
+                "amount": 1
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 20
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Linear FTL Emitter",
+        "qtyOut": 1,
+        "craftTime": 43200,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 4
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 3
+            },
+            {
+                "resource": "Control Console",
+                "amount": 1
+            },
+            {
+                "resource": "Heat Shielding",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Control Console",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 1
+            },
+            {
+                "resource": "Reinforced Glass",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "VR Headset",
+        "qtyOut": 3,
+        "craftTime": 6300,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Reinforced Glass",
+                "amount": 2
+            },
+            {
+                "resource": "Nanopolyne",
+                "amount": 5
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 4
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Hydrogen Generator",
+        "qtyOut": 1,
+        "craftTime": 39600,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 7
+            },
+            {
+                "resource": "Pressure Sealant Kit",
+                "amount": 3
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 2
+            },
+            {
+                "resource": "Battery",
+                "amount": 5
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Ship Interior Kit",
+        "qtyOut": 1,
+        "craftTime": 21600,
+        "machine": "Advanced Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Pressure Sealant Kit",
+                "amount": 1
+            },
+            {
+                "resource": "Pipes",
+                "amount": 10
+            },
+            {
+                "resource": "Furniture",
+                "amount": 4
+            },
+            {
+                "resource": "Neoplast Sheet",
+                "amount": 4
+            },
+            {
+                "resource": "Consumer Electronics",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Apex Structural Elements",
+        "qtyOut": 1,
+        "craftTime": 9000,
+        "machine": "Apex Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Composite Truss",
+                "amount": 2
+            },
+            {
+                "resource": "Molecular Fusion Kit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Advanced Prefab Kit",
+        "qtyOut": 1,
+        "craftTime": 15000,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 5
+            },
+            {
+                "resource": "Durablend",
+                "amount": 20
+            },
+            {
+                "resource": "Reinforced Glass",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Advanced Construction Kit",
+        "qtyOut": 1,
+        "craftTime": 18000,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Neoplast Sheet",
+                "amount": 2
+            },
+            {
+                "resource": "Construction Vehicle",
+                "amount": 1
+            },
+            {
+                "resource": "Drone",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Advanced Amenities",
+        "qtyOut": 1,
+        "craftTime": 12600,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Pipes",
+                "amount": 6
+            },
+            {
+                "resource": "Furniture",
+                "amount": 4
+            },
+            {
+                "resource": "Reinforced Glass",
+                "amount": 5
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 30
+            },
+            {
+                "resource": "Consumer Electronics",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Durablend",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 1
+            },
+            {
+                "resource": "Concrete",
+                "amount": 10
+            },
+            {
+                "resource": "Neoplast",
+                "amount": 6
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Insulation Panels",
+        "qtyOut": 3,
+        "craftTime": 5400,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Fabric",
+                "amount": 8
+            },
+            {
+                "resource": "Neoplast Sheet",
+                "amount": 1
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Neoplast Sheet",
+        "qtyOut": 1,
+        "craftTime": 2700,
+        "machine": "Polymer Plant",
+        "ingredients": [
+            {
+                "resource": "Neoplast",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Transistor",
+        "qtyOut": 20,
+        "craftTime": 3600,
+        "machine": "Semiconductor Foundry",
+        "ingredients": [
+            {
+                "resource": "Carbon",
+                "amount": 1
+            },
+            {
+                "resource": "Silica",
+                "amount": 3
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Silicon Wafer",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Foundry",
+        "ingredients": [
+            {
+                "resource": "Silica",
+                "amount": 3
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Chip",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Semiconductor Foundry",
+        "ingredients": [
+            {
+                "resource": "Neoplast",
+                "amount": 4
+            },
+            {
+                "resource": "Copper Wire",
+                "amount": 5
+            },
+            {
+                "resource": "Silicon Wafer",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Construction Kit",
+        "qtyOut": 1,
+        "craftTime": 6300,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Polyethylene",
+                "amount": 22
+            },
+            {
+                "resource": "Construction Tools",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Advanced Research Data",
+        "qtyOut": 1,
+        "craftTime": 13500,
+        "machine": "Laboratory",
+        "ingredients": [
+            {
+                "resource": "Durablend",
+                "amount": 7
+            },
+            {
+                "resource": "Kevlar",
+                "amount": 3
+            },
+            {
+                "resource": "Drill",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Apex Research Data",
+        "qtyOut": 4,
+        "craftTime": 36900,
+        "machine": "Science Institute",
+        "ingredients": [
+            {
+                "resource": "Mainframe",
+                "amount": 1
+            },
+            {
+                "resource": "Sensor Array",
+                "amount": 1
+            },
+            {
+                "resource": "Artificial Intelligence",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Honeycaps",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 13
+            }
+        ]
+    },
+    {
+        "output": "Sugar",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Food Processing Plant",
+        "ingredients": [
+            {
+                "resource": "Honeycaps",
+                "amount": 5
+            },
+            {
+                "resource": "Water",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Pie",
+        "qtyOut": 5,
+        "craftTime": 5400,
+        "machine": "Culinary Studio",
+        "ingredients": [
+            {
+                "resource": "Fruits",
+                "amount": 3
+            },
+            {
+                "resource": "Grain",
+                "amount": 5
+            },
+            {
+                "resource": "Milk",
+                "amount": 6
+            },
+            {
+                "resource": "Eggs",
+                "amount": 2
+            },
+            {
+                "resource": "Sugar",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Chickens",
+        "qtyOut": 4,
+        "craftTime": 3600,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Grain",
+                "amount": 15
+            },
+            {
+                "resource": "Water",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Wood",
+        "qtyOut": 35,
+        "craftTime": 7200,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 18
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Honeycaps",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 16
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Coffee Beans",
+        "qtyOut": 15,
+        "craftTime": 4500,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 11
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Modern Prefab Kit",
+        "qtyOut": 1,
+        "craftTime": 10800,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Concrete",
+                "amount": 15
+            },
+            {
+                "resource": "Glass",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Structural Elements",
+        "qtyOut": 1,
+        "craftTime": 9900,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Truss",
+                "amount": 3
+            },
+            {
+                "resource": "Color Compound",
+                "amount": 5
+            },
+            {
+                "resource": "Welding Kit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Superconducting Coil",
+        "qtyOut": 6,
+        "craftTime": 9000,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Graphenium Wire",
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "output": "Fission Reactor",
+        "qtyOut": 1,
+        "craftTime": 43200,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 5
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 5
+            },
+            {
+                "resource": "Control Console",
+                "amount": 1
+            },
+            {
+                "resource": "Sensor Array",
+                "amount": 1
+            },
+            {
+                "resource": "Radiation Shielding",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Quantum FTL Emitter",
+        "qtyOut": 1,
+        "craftTime": 21600,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "FTL Field Controller",
+                "amount": 1
+            },
+            {
+                "resource": "Radiation Shielding",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Titanium Ore",
+        "qtyOut": 38,
+        "craftTime": 16200,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            },
+            {
+                "resource": "Titanium Carbide Drill",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Platinum Ore",
+        "qtyOut": 35,
+        "craftTime": 12600,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            },
+            {
+                "resource": "Titanium Carbide Drill",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Ship Repair Kit",
+        "qtyOut": 1,
+        "craftTime": 9900,
+        "machine": "Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 1
+            },
+            {
+                "resource": "Truss",
+                "amount": 1
+            },
+            {
+                "resource": "Welding Kit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Aeridium Ore",
+        "qtyOut": 35,
+        "craftTime": 13500,
+        "machine": "Quarry Complex",
+        "ingredients": [
+            {
+                "resource": "Mining Vehicle",
+                "amount": 1
+            },
+            {
+                "resource": "Titanium Carbide Drill",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Aeridium",
+        "qtyOut": 2,
+        "craftTime": 5400,
+        "machine": "Advanced Materials Lab",
+        "ingredients": [
+            {
+                "resource": "Aeridium Ore",
+                "amount": 2
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            },
+            {
+                "resource": "Sulfuric Acid",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Tiridium Alloy",
+        "qtyOut": 1,
+        "craftTime": 4500,
+        "machine": "Advanced Materials Lab",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Aeridium",
+                "amount": 1
+            },
+            {
+                "resource": "Argon",
+                "amount": 2
+            },
+            {
+                "resource": "Graphene",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Starglass Hull Plate",
+        "qtyOut": 1,
+        "craftTime": 15300,
+        "machine": "Apex Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Starglass",
+                "amount": 2
+            },
+            {
+                "resource": "Nanoweave",
+                "amount": 10
+            },
+            {
+                "resource": "Molecular Fusion Kit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Tiridium Hull Plate",
+        "qtyOut": 1,
+        "craftTime": 33300,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Composite Truss",
+                "amount": 1
+            },
+            {
+                "resource": "Molecular Fusion Kit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Mainframe",
+        "qtyOut": 1,
+        "craftTime": 9000,
+        "machine": "Micronics Factory",
+        "ingredients": [
+            {
+                "resource": "Aluminium",
+                "amount": 2
+            },
+            {
+                "resource": "Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Circuit Board",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 2
+            },
+            {
+                "resource": "Operating System",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "AICore",
+        "qtyOut": 1,
+        "craftTime": 24300,
+        "machine": "Quantum Factory",
+        "ingredients": [
+            {
+                "resource": "Field Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "Control Console",
+                "amount": 1
+            },
+            {
+                "resource": "Quantum Mainframe",
+                "amount": 1
+            },
+            {
+                "resource": "Artificial Intelligence",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Composite Shielding",
+        "qtyOut": 2,
+        "craftTime": 12600,
+        "machine": "Nanomaterial Lab",
+        "ingredients": [
+            {
+                "resource": "Titanium",
+                "amount": 1
+            },
+            {
+                "resource": "Graphene",
+                "amount": 3
+            },
+            {
+                "resource": "Kevlar",
+                "amount": 2
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Hauler Bridge",
+        "qtyOut": 1,
+        "craftTime": 42000,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Reinforced Glass",
+                "amount": 5
+            },
+            {
+                "resource": "Life Support System",
+                "amount": 2
+            },
+            {
+                "resource": "VR Headset",
+                "amount": 4
+            },
+            {
+                "resource": "Mainframe",
+                "amount": 2
+            },
+            {
+                "resource": "Sensor Array",
+                "amount": 2
+            },
+            {
+                "resource": "Artificial Intelligence",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Nanopolyne",
+        "qtyOut": 20,
+        "craftTime": 9000,
+        "machine": "Nanomaterial Lab",
+        "ingredients": [
+            {
+                "resource": "Aeridium",
+                "amount": 1
+            },
+            {
+                "resource": "Argon",
+                "amount": 4
+            },
+            {
+                "resource": "Graphene",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Nanoweave",
+        "qtyOut": 8,
+        "craftTime": 6300,
+        "machine": "Nanomaterial Lab",
+        "ingredients": [
+            {
+                "resource": "Carbon Nanotubes",
+                "amount": 1
+            },
+            {
+                "resource": "Nanopolyne",
+                "amount": 5
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Nanoweave Shielding",
+        "qtyOut": 2,
+        "craftTime": 9000,
+        "machine": "Exotic Matter Lab",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Nanoweave",
+                "amount": 5
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 8
+            }
+        ]
+    },
+    {
+        "output": "Drone",
+        "qtyOut": 1,
+        "craftTime": 6000,
+        "machine": "Electronics Factory",
+        "ingredients": [
+            {
+                "resource": "Neoplast",
+                "amount": 8
+            },
+            {
+                "resource": "Electric Motor",
+                "amount": 1
+            },
+            {
+                "resource": "Electronic Circuit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Apex Prefab Kit",
+        "qtyOut": 1,
+        "craftTime": 9000,
+        "machine": "Apex Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Cohesilite",
+                "amount": 10
+            },
+            {
+                "resource": "Epoxy",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Cohesilite",
+        "qtyOut": 20,
+        "craftTime": 9000,
+        "machine": "Apex Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Concrete",
+                "amount": 20
+            },
+            {
+                "resource": "Nanopolyne",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Operating System",
+        "qtyOut": 1,
+        "craftTime": 5400,
+        "machine": "Science Institute",
+        "ingredients": [
+            {
+                "resource": "Consumer Electronics",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Artificial Intelligence",
+        "qtyOut": 1,
+        "craftTime": 7200,
+        "machine": "Science Institute",
+        "ingredients": [
+            {
+                "resource": "Consumer Electronics",
+                "amount": 1
+            },
+            {
+                "resource": "AI Training Data",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "AI Training Data",
+        "qtyOut": 5,
+        "craftTime": 21900,
+        "machine": "Science Institute",
+        "ingredients": [
+            {
+                "resource": "VR Headset",
+                "amount": 1
+            },
+            {
+                "resource": "Mainframe",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Research Data",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Antimatter Reactor",
+        "qtyOut": 1,
+        "craftTime": 108000,
+        "machine": "Shipyard",
+        "ingredients": [
+            {
+                "resource": "Starglass",
+                "amount": 20
+            },
+            {
+                "resource": "Antimatter Containment",
+                "amount": 10
+            },
+            {
+                "resource": "Graphenium Wire",
+                "amount": 5
+            },
+            {
+                "resource": "Quantum Mainframe",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Lobster",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Aquaponics Farm",
+        "ingredients": [
+            {
+                "resource": "Herbs",
+                "amount": 5
+            },
+            {
+                "resource": "Water",
+                "amount": 15
+            },
+            {
+                "resource": "Bio-Nutrient Blend",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Herbs",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Orchard",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 5
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Exotic Spices",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Aquaponics Farm",
+        "ingredients": [
+            {
+                "resource": "Water",
+                "amount": 16
+            },
+            {
+                "resource": "Bio-Nutrient Blend",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Gourmet Rations",
+        "qtyOut": 10,
+        "craftTime": 5400,
+        "machine": "Culinary Studio",
+        "ingredients": [
+            {
+                "resource": "Vegetables",
+                "amount": 4
+            },
+            {
+                "resource": "Herbs",
+                "amount": 4
+            },
+            {
+                "resource": "Exotic Spices",
+                "amount": 1
+            },
+            {
+                "resource": "Lobster",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Rejuvaline",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Herbs",
+                "amount": 2
+            },
+            {
+                "resource": "Lobster",
+                "amount": 1
+            },
+            {
+                "resource": "Bioxene",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Vitaqua",
+        "qtyOut": 20,
+        "craftTime": 4500,
+        "machine": "Culinary Studio",
+        "ingredients": [
+            {
+                "resource": "Honeycaps",
+                "amount": 2
+            },
+            {
+                "resource": "Herbs",
+                "amount": 4
+            },
+            {
+                "resource": "Water",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "output": "Extra-dimensional FTL Emitter",
+        "qtyOut": 2,
+        "craftTime": 37800,
+        "machine": "Quantum Factory",
+        "ingredients": [
+            {
+                "resource": "Starglass",
+                "amount": 5
+            },
+            {
+                "resource": "Field Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "FTL Field Controller",
+                "amount": 1
+            },
+            {
+                "resource": "Superconducting Coil",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Industrial Machinery",
+        "qtyOut": 1,
+        "craftTime": 17100,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Steel",
+                "amount": 4
+            },
+            {
+                "resource": "Rubber",
+                "amount": 30
+            },
+            {
+                "resource": "Electric Motor",
+                "amount": 2
+            },
+            {
+                "resource": "Control Console",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Biopolyne",
+        "qtyOut": 5,
+        "craftTime": 4500,
+        "machine": "Exotic Matter Lab",
+        "ingredients": [
+            {
+                "resource": "Bioxene",
+                "amount": 2
+            },
+            {
+                "resource": "Kryon",
+                "amount": 1
+            },
+            {
+                "resource": "Nanoweave",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Nanites",
+        "qtyOut": 10,
+        "craftTime": 7200,
+        "machine": "Quantum Factory",
+        "ingredients": [
+            {
+                "resource": "Starglass",
+                "amount": 1
+            },
+            {
+                "resource": "Battery",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Quantum Research Data",
+        "qtyOut": 5,
+        "craftTime": 69300,
+        "machine": "Quantum Nexus",
+        "ingredients": [
+            {
+                "resource": "Quadranium",
+                "amount": 5
+            },
+            {
+                "resource": "Superconducting Coil",
+                "amount": 10
+            },
+            {
+                "resource": "AICore",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Filtration System",
+        "qtyOut": 2,
+        "craftTime": 8100,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Aeridium",
+                "amount": 1
+            },
+            {
+                "resource": "Pipes",
+                "amount": 3
+            },
+            {
+                "resource": "Carbon Nanotubes",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Freighter Bridge",
+        "qtyOut": 1,
+        "craftTime": 64800,
+        "machine": "Shipyard",
+        "ingredients": [
+            {
+                "resource": "Biopolyne",
+                "amount": 15
+            },
+            {
+                "resource": "Life Support System",
+                "amount": 4
+            },
+            {
+                "resource": "Sensor Array",
+                "amount": 3
+            },
+            {
+                "resource": "AICore",
+                "amount": 1
+            },
+            {
+                "resource": "Neural Interface",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Ship Repair Kit",
+        "qtyOut": 70,
+        "craftTime": 86400,
+        "machine": "Advanced Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Ship Interior Kit",
+                "amount": 2
+            },
+            {
+                "resource": "Hydrogen Generator",
+                "amount": 1
+            },
+            {
+                "resource": "Shuttle Bridge",
+                "amount": 1
+            },
+            {
+                "resource": "Linear FTL Emitter",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Neural Interface",
+        "qtyOut": 2,
+        "craftTime": 21600,
+        "machine": "Quantum Factory",
+        "ingredients": [
+            {
+                "resource": "Biopolyne",
+                "amount": 3
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 2
+            },
+            {
+                "resource": "Graphenium Wire",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Starlifter Structural Elements",
+        "qtyOut": 1,
+        "craftTime": 33000,
+        "machine": "Shipyard",
+        "ingredients": [
+            {
+                "resource": "Pipes",
+                "amount": 5
+            },
+            {
+                "resource": "Starglass",
+                "amount": 5
+            },
+            {
+                "resource": "Biopolyne",
+                "amount": 2
+            },
+            {
+                "resource": "Molecular Fusion Kit",
+                "amount": 1
+            },
+            {
+                "resource": "Graphenium Wire",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "output": "Eggs",
+        "qtyOut": 10,
+        "craftTime": 4500,
+        "machine": "Ranch",
+        "ingredients": [
+            {
+                "resource": "Grain",
+                "amount": 5
+            },
+            {
+                "resource": "Chickens",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Starglass",
+        "qtyOut": 2,
+        "craftTime": 9000,
+        "machine": "Exotic Matter Lab",
+        "ingredients": [
+            {
+                "resource": "Kryon",
+                "amount": 2
+            },
+            {
+                "resource": "Carbon Nanotubes",
+                "amount": 2
+            },
+            {
+                "resource": "Quadranium",
+                "amount": 1
+            },
+            {
+                "resource": "Aerogel",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Graphenium",
+        "qtyOut": 2,
+        "craftTime": 21600,
+        "machine": "Advanced Materials Lab",
+        "ingredients": [
+            {
+                "resource": "Lithium",
+                "amount": 2
+            },
+            {
+                "resource": "Bioxene",
+                "amount": 2
+            },
+            {
+                "resource": "Graphene",
+                "amount": 3
+            },
+            {
+                "resource": "Quadranium",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Quantum Research Data",
+        "qtyOut": 2,
+        "craftTime": 43200,
+        "machine": "Quantum Nexus",
+        "ingredients": [
+            {
+                "resource": "Bioxene",
+                "amount": 10
+            },
+            {
+                "resource": "Biopolyne",
+                "amount": 5
+            },
+            {
+                "resource": "Quantum Mainframe",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Quantum Mainframe",
+        "qtyOut": 1,
+        "craftTime": 27000,
+        "machine": "Quantum Factory",
+        "ingredients": [
+            {
+                "resource": "Nanoweave Shielding",
+                "amount": 1
+            },
+            {
+                "resource": "Field Cooling System",
+                "amount": 1
+            },
+            {
+                "resource": "Graphenium Wire",
+                "amount": 5
+            },
+            {
+                "resource": "Operating System",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Field Cooling System",
+        "qtyOut": 2,
+        "craftTime": 16200,
+        "machine": "Robotics Facility",
+        "ingredients": [
+            {
+                "resource": "Platinum",
+                "amount": 1
+            },
+            {
+                "resource": "Tiridium Alloy",
+                "amount": 1
+            },
+            {
+                "resource": "Advanced Processing Unit",
+                "amount": 2
+            },
+            {
+                "resource": "Superconducting Coil",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "output": "Bio-Nutrient Blend",
+        "qtyOut": 25,
+        "craftTime": 7200,
+        "machine": "Chemical Plant",
+        "ingredients": [
+            {
+                "resource": "Aeridium Ore",
+                "amount": 1
+            },
+            {
+                "resource": "Bioxene",
+                "amount": 2
+            },
+            {
+                "resource": "Fertilizer",
+                "amount": 25
+            }
+        ]
+    },
+    {
+        "output": "Advanced Processing Unit",
+        "qtyOut": 3,
+        "craftTime": 10800,
+        "machine": "Semiconductor Foundry",
+        "ingredients": [
+            {
+                "resource": "Platinum",
+                "amount": 1
+            },
+            {
+                "resource": "Graphene",
+                "amount": 3
+            },
+            {
+                "resource": "Nanopolyne",
+                "amount": 4
+            },
+            {
+                "resource": "Silicon Wafer",
+                "amount": 4
+            }
+        ]
+    },
+    {
+        "output": "Furniture",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Assembly Plant",
+        "ingredients": [
+            {
+                "resource": "Cotton",
+                "amount": 2
+            },
+            {
+                "resource": "Leather",
+                "amount": 2
+            },
+            {
+                "resource": "Wood",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "Ship Repair Kit",
+        "qtyOut": 185,
+        "craftTime": 86400,
+        "machine": "Apex Prefab Plant",
+        "ingredients": [
+            {
+                "resource": "Ship Interior Kit",
+                "amount": 3
+            },
+            {
+                "resource": "Fission Reactor",
+                "amount": 1
+            },
+            {
+                "resource": "Hauler Bridge",
+                "amount": 1
+            },
+            {
+                "resource": "Quantum FTL Emitter",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "output": "Iron",
+        "qtyOut": 3,
+        "craftTime": 4500,
+        "machine": "Smelter",
+        "ingredients": [
+            {
+                "resource": "Iron Ore",
+                "amount": 4
+            },
+            {
+                "resource": "Hydrogen",
+                "amount": 2
+            },
+            {
+                "resource": "Flux",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "output": "TEMP",
+        "qtyOut": 1,
+        "craftTime": 4500,
+        "machine": "Semiconductor Foundry",
+        "ingredients": []
+    }
+]

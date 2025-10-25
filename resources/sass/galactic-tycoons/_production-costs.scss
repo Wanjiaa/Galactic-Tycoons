@@ -1,0 +1,60 @@
+// ========================================
+// GALACTIC TYCOONS - Production Costs
+// ========================================
+
+.production-cost-cell {
+  text-align: center;
+}
+
+.production-cost {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(110, 231, 183, 0.1);
+  border: 1px solid rgba(110, 231, 183, 0.2);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: help;
+  position: relative;
+
+  &:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    padding: 12px;
+    background: #1a1d26;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text);
+    white-space: pre-line;
+    z-index: 1000;
+    min-width: 250px;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+  }
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2px;
+    border: 6px solid transparent;
+    border-top-color: var(--line);
+    z-index: 1001;
+  }
+}
+
+.production-cost-none {
+  color: var(--muted);
+  font-size: 13px;
+}
+

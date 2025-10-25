@@ -1,0 +1,174 @@
+[
+    {
+        "type": "Technician",
+        "adminCost": 100,
+        "productionBonus": 100,
+        "consumables": [
+            {
+                "material": "Rations",
+                "amount": 240,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Drinking Water",
+                "amount": 320,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Tools",
+                "amount": 120,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Workwear",
+                "amount": 80,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Ale",
+                "amount": 72,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Pie",
+                "amount": 16,
+                "essential": false,
+                "bonusPercent": 10
+            }
+        ]
+    },
+    {
+        "type": "Engineer",
+        "adminCost": 150,
+        "productionBonus": 100,
+        "consumables": [
+            {
+                "material": "Fine Rations",
+                "amount": 240,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Drinking Water",
+                "amount": 480,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Workwear",
+                "amount": 160,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Coffee",
+                "amount": 80,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Exosuit",
+                "amount": 24,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Pie",
+                "amount": 24,
+                "essential": false,
+                "bonusPercent": 10
+            }
+        ]
+    },
+    {
+        "type": "Scientist",
+        "adminCost": 250,
+        "productionBonus": 100,
+        "consumables": [
+            {
+                "material": "Fine Rations",
+                "amount": 280,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Vitaqua",
+                "amount": 440,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Advanced Tools",
+                "amount": 120,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Coffee",
+                "amount": 80,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Robot",
+                "amount": 8,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Rejuvaline",
+                "amount": 40,
+                "essential": false,
+                "bonusPercent": 10
+            }
+        ]
+    },
+    {
+        "type": "Worker_Type_4",
+        "adminCost": 400,
+        "productionBonus": 100,
+        "consumables": [
+            {
+                "material": "Gourmet Rations",
+                "amount": 280,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Vitaqua",
+                "amount": 440,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Spectra Modulator",
+                "amount": 60,
+                "essential": true,
+                "bonusPercent": 20
+            },
+            {
+                "material": "Laboratory Suit",
+                "amount": 40,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Nanites",
+                "amount": 40,
+                "essential": false,
+                "bonusPercent": 10
+            },
+            {
+                "material": "Rejuvaline",
+                "amount": 48,
+                "essential": false,
+                "bonusPercent": 10
+            }
+        ]
+    }
+]

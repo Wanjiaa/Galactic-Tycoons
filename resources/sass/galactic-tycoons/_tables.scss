@@ -1,0 +1,41 @@
+// ========================================
+// GALACTIC TYCOONS - Tables
+// ========================================
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+
+  th {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  tbody tr {
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(110, 231, 183, 0.03);
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 6px 8px;
+  }
+}
+

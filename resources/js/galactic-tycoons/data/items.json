@@ -1,0 +1,907 @@
+[
+    {
+        "name": "Iron Ore",
+        "tier": 1,
+        "weight": 1
+    },
+    {
+        "name": "Iron",
+        "tier": 1,
+        "weight": 1.5
+    },
+    {
+        "name": "Concrete",
+        "tier": 1,
+        "weight": 0.35
+    },
+    {
+        "name": "Grain",
+        "tier": 1,
+        "weight": 0.05
+    },
+    {
+        "name": "Copper Ore",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Copper",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Oxygen",
+        "tier": 1,
+        "weight": 0.5
+    },
+    {
+        "name": "Silica",
+        "tier": 1,
+        "weight": 0.8
+    },
+    {
+        "name": "Milk",
+        "tier": 2,
+        "weight": 0.2
+    },
+    {
+        "name": "Ale",
+        "tier": 1,
+        "weight": 0.15
+    },
+    {
+        "name": "Water",
+        "tier": 1,
+        "weight": 0.65
+    },
+    {
+        "name": "Rations",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Fine Rations",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Laboratory Suit",
+        "tier": 4,
+        "weight": 0.5
+    },
+    {
+        "name": "Exosuit",
+        "tier": 2,
+        "weight": 1
+    },
+    {
+        "name": "Drinking Water",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Tools",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Advanced Tools",
+        "tier": 2,
+        "weight": 0.35
+    },
+    {
+        "name": "Molecular Fusion Kit",
+        "tier": 3,
+        "weight": 2
+    },
+    {
+        "name": "Robot",
+        "tier": 3,
+        "weight": 2
+    },
+    {
+        "name": "Coffee",
+        "tier": 2,
+        "weight": 0.2
+    },
+    {
+        "name": "Bioxene",
+        "tier": 3,
+        "weight": 1
+    },
+    {
+        "name": "Tesserite",
+        "tier": 4,
+        "weight": 3.5
+    },
+    {
+        "name": "Hydrogen",
+        "tier": 1,
+        "weight": 0.3
+    },
+    {
+        "name": "Polyethylene",
+        "tier": 1,
+        "weight": 0.035
+    },
+    {
+        "name": "Construction Kit",
+        "tier": 1,
+        "weight": 2
+    },
+    {
+        "name": "Construction Tools",
+        "tier": 1,
+        "weight": 0.25
+    },
+    {
+        "name": "Fruits",
+        "tier": 1,
+        "weight": 0.2
+    },
+    {
+        "name": "Vegetables",
+        "tier": 1,
+        "weight": 0.2
+    },
+    {
+        "name": "Neoplast",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Carbon",
+        "tier": 1,
+        "weight": 0.75
+    },
+    {
+        "name": "Nitrogen",
+        "tier": 1,
+        "weight": 0.5
+    },
+    {
+        "name": "Glass",
+        "tier": 1,
+        "weight": 0.25
+    },
+    {
+        "name": "Limestone",
+        "tier": 1,
+        "weight": 1
+    },
+    {
+        "name": "Steel",
+        "tier": 1,
+        "weight": 2.5
+    },
+    {
+        "name": "Fertilizer",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Cows",
+        "tier": 1,
+        "weight": 3
+    },
+    {
+        "name": "Meat",
+        "tier": 1,
+        "weight": 0.25
+    },
+    {
+        "name": "Cotton",
+        "tier": 1,
+        "weight": 0.2
+    },
+    {
+        "name": "Uranium Ore",
+        "tier": 3,
+        "weight": 1.5
+    },
+    {
+        "name": "Flux",
+        "tier": 1,
+        "weight": 0.4
+    },
+    {
+        "name": "Aluminium Ore",
+        "tier": 1,
+        "weight": 1.25
+    },
+    {
+        "name": "Aluminium",
+        "tier": 1,
+        "weight": 1.25
+    },
+    {
+        "name": "Workwear",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Titanium Ore",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Titanium",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Furniture",
+        "tier": 1,
+        "weight": 0.4
+    },
+    {
+        "name": "Wood",
+        "tier": 1,
+        "weight": 0.65
+    },
+    {
+        "name": "Leather",
+        "tier": 1,
+        "weight": 0.3
+    },
+    {
+        "name": "Fabric",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Coffee Beans",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Construction Vehicle",
+        "tier": 1,
+        "weight": 5
+    },
+    {
+        "name": "Rubber",
+        "tier": 1,
+        "weight": 0.075
+    },
+    {
+        "name": "Combustion Engine",
+        "tier": 1,
+        "weight": 2
+    },
+    {
+        "name": "Electric Motor",
+        "tier": 2,
+        "weight": 0.65
+    },
+    {
+        "name": "Battery",
+        "tier": 2,
+        "weight": 0.3
+    },
+    {
+        "name": "Ethanol",
+        "tier": 1,
+        "weight": 0.2
+    },
+    {
+        "name": "Lubricant",
+        "tier": 1,
+        "weight": 0.15
+    },
+    {
+        "name": "Electronic Circuit",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Lithium",
+        "tier": 2,
+        "weight": 1.5
+    },
+    {
+        "name": "Sulfuric Acid",
+        "tier": 2,
+        "weight": 0.3
+    },
+    {
+        "name": "Copper Wire",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Consumer Electronics",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Research Data",
+        "tier": 1,
+        "weight": 0.1
+    },
+    {
+        "name": "Advanced Research Data",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Office Supplies",
+        "tier": 1,
+        "weight": 0.3
+    },
+    {
+        "name": "Aeridium Ore",
+        "tier": 3,
+        "weight": 3
+    },
+    {
+        "name": "Pipes",
+        "tier": 1,
+        "weight": 0.35
+    },
+    {
+        "name": "Argon",
+        "tier": 2,
+        "weight": 0.6
+    },
+    {
+        "name": "Kryon",
+        "tier": 4,
+        "weight": 0.75
+    },
+    {
+        "name": "Coolant",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Epoxy",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Fission Fuel",
+        "tier": 3,
+        "weight": 1
+    },
+    {
+        "name": "Kevlar",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Platinum Ore",
+        "tier": 3,
+        "weight": 2
+    },
+    {
+        "name": "Platinum",
+        "tier": 3,
+        "weight": 2.5
+    },
+    {
+        "name": "Graphene",
+        "tier": 3,
+        "weight": 0.25
+    },
+    {
+        "name": "Carbon Nanotubes",
+        "tier": 3,
+        "weight": 0.1
+    },
+    {
+        "name": "Aerogel",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Graphenium Wire",
+        "tier": 4,
+        "weight": 0.4
+    },
+    {
+        "name": "Radiation Shielding",
+        "tier": 3,
+        "weight": 2
+    },
+    {
+        "name": "Life Support System",
+        "tier": 2,
+        "weight": 1.5
+    },
+    {
+        "name": "Reinforced Glass",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Color Compound",
+        "tier": 1,
+        "weight": 0.25
+    },
+    {
+        "name": "Spectra Modulator",
+        "tier": 3,
+        "weight": 0.3
+    },
+    {
+        "name": "Mining Vehicle",
+        "tier": 2,
+        "weight": 5
+    },
+    {
+        "name": "Drill",
+        "tier": 1,
+        "weight": 1
+    },
+    {
+        "name": "Chickens",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Insulation Panels",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Pressure Sealant Kit",
+        "tier": 2,
+        "weight": 0.5
+    },
+    {
+        "name": "Structural Elements",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Prefab Kit",
+        "tier": 1,
+        "weight": 2
+    },
+    {
+        "name": "Amenities",
+        "tier": 1,
+        "weight": 1.5
+    },
+    {
+        "name": "Advanced Construction Kit",
+        "tier": 3,
+        "weight": 3.5
+    },
+    {
+        "name": "Apex Structural Elements",
+        "tier": 4,
+        "weight": 4
+    },
+    {
+        "name": "Advanced Prefab Kit",
+        "tier": 3,
+        "weight": 3.5
+    },
+    {
+        "name": "Advanced Amenities",
+        "tier": 3,
+        "weight": 3
+    },
+    {
+        "name": "Truss",
+        "tier": 1,
+        "weight": 1
+    },
+    {
+        "name": "Composite Truss",
+        "tier": 2,
+        "weight": 1.5
+    },
+    {
+        "name": "Titanium Carbide Drill",
+        "tier": 3,
+        "weight": 1.5
+    },
+    {
+        "name": "Hydrogen Generator",
+        "tier": 2,
+        "weight": 7.5
+    },
+    {
+        "name": "Control Console",
+        "tier": 2,
+        "weight": 0.75
+    },
+    {
+        "name": "Ship Interior Kit",
+        "tier": 2,
+        "weight": 6
+    },
+    {
+        "name": "Hull Plate",
+        "tier": 1,
+        "weight": 2
+    },
+    {
+        "name": "Cargo Bay Segment",
+        "tier": 2,
+        "weight": 4
+    },
+    {
+        "name": "Fuel Tank Segment",
+        "tier": 2,
+        "weight": 4
+    },
+    {
+        "name": "Pump",
+        "tier": 2,
+        "weight": 0.6
+    },
+    {
+        "name": "Welding Kit",
+        "tier": 1,
+        "weight": 0.6
+    },
+    {
+        "name": "Linear FTL Emitter",
+        "tier": 2,
+        "weight": 7.5
+    },
+    {
+        "name": "Hydrogen Fuel",
+        "tier": 1,
+        "weight": 0.25
+    },
+    {
+        "name": "Heat Shielding",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Advanced Circuit Board",
+        "tier": 2,
+        "weight": 0.2
+    },
+    {
+        "name": "Ship Repair Kit",
+        "tier": 1,
+        "weight": 0.75
+    },
+    {
+        "name": "Starglass Hull Plate",
+        "tier": 4,
+        "weight": 7.5
+    },
+    {
+        "name": "FTL Field Controller",
+        "tier": 3,
+        "weight": 4
+    },
+    {
+        "name": "Sensor Array",
+        "tier": 3,
+        "weight": 3
+    },
+    {
+        "name": "Cooling System",
+        "tier": 2,
+        "weight": 1.25
+    },
+    {
+        "name": "Shuttle Bridge",
+        "tier": 2,
+        "weight": 15
+    },
+    {
+        "name": "VR Headset",
+        "tier": 3,
+        "weight": 0.4
+    },
+    {
+        "name": "Composite Shielding",
+        "tier": 3,
+        "weight": 1.5
+    },
+    {
+        "name": "Nanoweave Shielding",
+        "tier": 4,
+        "weight": 2
+    },
+    {
+        "name": "Durablend",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Neoplast Sheet",
+        "tier": 2,
+        "weight": 0.6
+    },
+    {
+        "name": "Transistor",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Chip",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Silicon Wafer",
+        "tier": 2,
+        "weight": 0.1
+    },
+    {
+        "name": "Apex Research Data",
+        "tier": 3,
+        "weight": 0.1
+    },
+    {
+        "name": "Honeycaps",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Sugar",
+        "tier": 2,
+        "weight": 0.25
+    },
+    {
+        "name": "Pie",
+        "tier": 2,
+        "weight": 0.4
+    },
+    {
+        "name": "Eggs",
+        "tier": 2,
+        "weight": 0.2
+    },
+    {
+        "name": "Modern Prefab Kit",
+        "tier": 2,
+        "weight": 2
+    },
+    {
+        "name": "Fission Reactor",
+        "tier": 3,
+        "weight": 25
+    },
+    {
+        "name": "Quantum FTL Emitter",
+        "tier": 3,
+        "weight": 12.5
+    },
+    {
+        "name": "Aeridium",
+        "tier": 3,
+        "weight": 3
+    },
+    {
+        "name": "Tiridium Alloy",
+        "tier": 3,
+        "weight": 4
+    },
+    {
+        "name": "Tiridium Hull Plate",
+        "tier": 3,
+        "weight": 5
+    },
+    {
+        "name": "AICore",
+        "tier": 4,
+        "weight": 10
+    },
+    {
+        "name": "Hauler Bridge",
+        "tier": 3,
+        "weight": 40
+    },
+    {
+        "name": "Mainframe",
+        "tier": 3,
+        "weight": 2.25
+    },
+    {
+        "name": "Nanopolyne",
+        "tier": 3,
+        "weight": 0.3
+    },
+    {
+        "name": "Nanoweave",
+        "tier": 3,
+        "weight": 0.5
+    },
+    {
+        "name": "Drone",
+        "tier": 2,
+        "weight": 1
+    },
+    {
+        "name": "Apex Prefab Kit",
+        "tier": 4,
+        "weight": 4
+    },
+    {
+        "name": "Cohesilite",
+        "tier": 3,
+        "weight": 0.6
+    },
+    {
+        "name": "Operating System",
+        "tier": 3,
+        "weight": 0.01
+    },
+    {
+        "name": "Artificial Intelligence",
+        "tier": 3,
+        "weight": 0.01
+    },
+    {
+        "name": "AI Training Data",
+        "tier": 3,
+        "weight": 0.01
+    },
+    {
+        "name": "Antimatter",
+        "tier": 4,
+        "weight": 3
+    },
+    {
+        "name": "Antimatter Reactor",
+        "tier": 4,
+        "weight": 100
+    },
+    {
+        "name": "Antimatter Containment",
+        "tier": 4,
+        "weight": 3
+    },
+    {
+        "name": "Superconducting Coil",
+        "tier": 4,
+        "weight": 0.5
+    },
+    {
+        "name": "Gourmet Rations",
+        "tier": 3,
+        "weight": 0.25
+    },
+    {
+        "name": "Exotic Spices",
+        "tier": 3,
+        "weight": 0.3
+    },
+    {
+        "name": "Lobster",
+        "tier": 3,
+        "weight": 0.4
+    },
+    {
+        "name": "Herbs",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Rejuvaline",
+        "tier": 3,
+        "weight": 0.2
+    },
+    {
+        "name": "Vitaqua",
+        "tier": 2,
+        "weight": 0.15
+    },
+    {
+        "name": "Quadranium",
+        "tier": 4,
+        "weight": 4
+    },
+    {
+        "name": "Extra-dimensional FTL Emitter",
+        "tier": 4,
+        "weight": 15
+    },
+    {
+        "name": "Industrial Machinery",
+        "tier": 3,
+        "weight": 4
+    },
+    {
+        "name": "Biopolyne",
+        "tier": 4,
+        "weight": 0.6
+    },
+    {
+        "name": "Nanites",
+        "tier": 4,
+        "weight": 0.4
+    },
+    {
+        "name": "Quantum Research Data",
+        "tier": 4,
+        "weight": 0.1
+    },
+    {
+        "name": "Filtration System",
+        "tier": 3,
+        "weight": 2
+    },
+    {
+        "name": "Freighter Bridge",
+        "tier": 4,
+        "weight": 75
+    },
+    {
+        "name": "Neural Interface",
+        "tier": 4,
+        "weight": 1.5
+    },
+    {
+        "name": "TEMP",
+        "tier": 2,
+        "weight": 0.6
+    },
+    {
+        "name": "Advanced Processing Unit",
+        "tier": 3,
+        "weight": 0.2
+    },
+    {
+        "name": "Starglass",
+        "tier": 4,
+        "weight": 4
+    },
+    {
+        "name": "Starlifter Structural Elements",
+        "tier": 4,
+        "weight": 25
+    },
+    {
+        "name": "Graphenium",
+        "tier": 4,
+        "weight": 2
+    },
+    {
+        "name": "Quantum Mainframe",
+        "tier": 4,
+        "weight": 7.5
+    },
+    {
+        "name": "Field Cooling System",
+        "tier": 4,
+        "weight": 6
+    },
+    {
+        "name": "Bio-Nutrient Blend",
+        "tier": 3,
+        "weight": 0.3
+    },
+    {
+        "name": "Medicine Shipment",
+        "tier": 9,
+        "weight": 5
+    },
+    {
+        "name": "Food Shipment",
+        "tier": 9,
+        "weight": 20
+    },
+    {
+        "name": "Ship Parts Shipment",
+        "tier": 9,
+        "weight": 100
+    },
+    {
+        "name": "Defense systems pack",
+        "tier": 9,
+        "weight": 50
+    },
+    {
+        "name": "Habitats shipment",
+        "tier": 9,
+        "weight": 200
+    },
+    {
+        "name": "Scientific Instruments Shipment",
+        "tier": 9,
+        "weight": 5
+    }
+]

@@ -1,0 +1,644 @@
+[
+    {
+        "name": "Mine",
+        "tier": 1,
+        "category": "Extraction",
+        "workforce": {
+            "workers": 70,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 1,
+            "Construction Kit": 5,
+            "Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Smelter",
+        "tier": 1,
+        "category": "Research",
+        "workforce": {
+            "workers": 60,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Pump",
+        "tier": 1,
+        "category": "Extraction",
+        "workforce": {
+            "workers": 50,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 1,
+            "Construction Kit": 4,
+            "Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Colony Barracks",
+        "tier": 1,
+        "category": "Housing",
+        "workforce": {
+            "workers": 125
+        },
+        "workforce_type": "provider",
+        "ingredients": {
+            "Amenities": 4,
+            "Construction Kit": 2,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Gas Collector",
+        "tier": 1,
+        "category": "Extraction",
+        "workforce": {
+            "workers": 50,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 1,
+            "Construction Kit": 4,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Prefab Plant",
+        "tier": 1,
+        "category": "Housing",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 4,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Refinery",
+        "tier": 1,
+        "category": "Agriculture",
+        "workforce": {
+            "workers": 60,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Food Processing Plant",
+        "tier": 1,
+        "category": "",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 4,
+            "Construction Kit": 3,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Headquarters",
+        "tier": 0,
+        "category": "",
+        "workforce": [],
+        "workforce_type": "",
+        "ingredients": {
+            "Amenities": 5,
+            "Construction Kit": 4,
+            "Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Farm",
+        "tier": 1,
+        "category": "Processing",
+        "workforce": {
+            "workers": 50,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 5,
+            "Prefab Kit": 3
+        }
+    },
+    {
+        "name": "Assembly Plant",
+        "tier": 1,
+        "category": "Production",
+        "workforce": {
+            "workers": 80,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Polymer Plant",
+        "tier": 2,
+        "category": "Agriculture",
+        "workforce": {
+            "workers": 35,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 4,
+            "Structural Elements": 3,
+            "Modern Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Chemical Plant",
+        "tier": 2,
+        "category": "Agriculture",
+        "workforce": {
+            "workers": 60,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 3,
+            "Construction Kit": 3,
+            "Structural Elements": 3,
+            "Modern Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Warehouse",
+        "tier": 1,
+        "category": "",
+        "workforce": [],
+        "workforce_type": "",
+        "ingredients": {
+            "Construction Kit": 4,
+            "Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Textile Mill",
+        "tier": 1,
+        "category": "Production",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 3,
+            "Construction Kit": 3,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Advanced Assembly Plant",
+        "tier": 2,
+        "category": "Production",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Structural Elements": 4,
+            "Modern Prefab Kit": 7
+        }
+    },
+    {
+        "name": "Ranch",
+        "tier": 1,
+        "category": "Processing",
+        "workforce": {
+            "workers": 50,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 4,
+            "Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Survey Station",
+        "tier": 1,
+        "category": "",
+        "workforce": {
+            "workers": 70,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 3,
+            "Construction Kit": 4,
+            "Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Orchard",
+        "tier": 2,
+        "category": "Processing",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 4,
+            "Construction Kit": 3,
+            "Structural Elements": 4,
+            "Modern Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Laboratory",
+        "tier": 2,
+        "category": "",
+        "workforce": {
+            "workers": 70,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 4,
+            "Construction Kit": 3,
+            "Structural Elements": 3,
+            "Modern Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Residential Complex",
+        "tier": 2,
+        "category": "Housing",
+        "workforce": {
+            "workers": 100
+        },
+        "workforce_type": "provider",
+        "ingredients": {
+            "Amenities": 6,
+            "Construction Kit": 3,
+            "Prefab Kit": 5,
+            "Structural Elements": 3
+        }
+    },
+    {
+        "name": "Comfort Quarters",
+        "tier": 3,
+        "category": "Housing",
+        "workforce": {
+            "workers": 80
+        },
+        "workforce_type": "provider",
+        "ingredients": {
+            "Structural Elements": 2,
+            "Advanced Amenities": 5,
+            "Advanced Construction Kit": 2,
+            "Advanced Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Stellar Suites",
+        "tier": 4,
+        "category": "Housing",
+        "workforce": {
+            "workers": 70
+        },
+        "workforce_type": "provider",
+        "ingredients": {
+            "Advanced Amenities": 6,
+            "Advanced Construction Kit": 3,
+            "Apex Structural Elements": 2,
+            "Apex Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Semiconductor Foundry",
+        "tier": 2,
+        "category": "Storage",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Structural Elements": 2,
+            "Modern Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Electronics Factory",
+        "tier": 2,
+        "category": "Storage",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 2,
+            "Construction Kit": 3,
+            "Structural Elements": 2,
+            "Modern Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Welding Plant",
+        "tier": 1,
+        "category": "Research",
+        "workforce": {
+            "workers": 60,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 1,
+            "Construction Kit": 4,
+            "Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Quarry Complex",
+        "tier": 2,
+        "category": "Extraction",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 0
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Construction Kit": 5,
+            "Structural Elements": 6,
+            "Modern Prefab Kit": 2
+        }
+    },
+    {
+        "name": "Science Institute",
+        "tier": 3,
+        "category": "",
+        "workforce": {
+            "workers": 70,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 2,
+            "Advanced Amenities": 3,
+            "Advanced Construction Kit": 2,
+            "Advanced Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Advanced Prefab Plant",
+        "tier": 2,
+        "category": "Housing",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Construction Kit": 4,
+            "Structural Elements": 2,
+            "Modern Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Shipyard",
+        "tier": 4,
+        "category": "Production",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Advanced Construction Kit": 3,
+            "Industrial Machinery": 4,
+            "Apex Prefab Kit": 3,
+            "Apex Structural Elements": 8
+        }
+    },
+    {
+        "name": "Micronics Factory",
+        "tier": 3,
+        "category": "Storage",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 2,
+            "Advanced Amenities": 2,
+            "Advanced Construction Kit": 2,
+            "Advanced Prefab Kit": 6
+        }
+    },
+    {
+        "name": "Advanced Materials Lab",
+        "tier": 3,
+        "category": "Research",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 4,
+            "Industrial Machinery": 3,
+            "Advanced Construction Kit": 4,
+            "Advanced Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Exotic Matter Lab",
+        "tier": 4,
+        "category": "Agriculture",
+        "workforce": {
+            "workers": 60,
+            "worker_index": 3
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Industrial Machinery": 3,
+            "Advanced Construction Kit": 3,
+            "Apex Prefab Kit": 5,
+            "Apex Structural Elements": 3
+        }
+    },
+    {
+        "name": "Aquaponics Farm",
+        "tier": 3,
+        "category": "Processing",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 3,
+            "Advanced Amenities": 2,
+            "Advanced Construction Kit": 4,
+            "Advanced Prefab Kit": 3
+        }
+    },
+    {
+        "name": "Robotics Facility",
+        "tier": 3,
+        "category": "Production",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 3,
+            "Industrial Machinery": 3,
+            "Advanced Construction Kit": 3,
+            "Advanced Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Culinary Studio",
+        "tier": 2,
+        "category": "",
+        "workforce": {
+            "workers": 70,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Amenities": 5,
+            "Construction Kit": 3,
+            "Structural Elements": 2,
+            "Modern Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Apex Prefab Plant",
+        "tier": 3,
+        "category": "Housing",
+        "workforce": {
+            "workers": 80,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 3,
+            "Industrial Machinery": 3,
+            "Advanced Construction Kit": 3,
+            "Advanced Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Quantum Nexus",
+        "tier": 4,
+        "category": "",
+        "workforce": {
+            "workers": 80,
+            "worker_index": 3
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Advanced Amenities": 3,
+            "Advanced Construction Kit": 3,
+            "Apex Prefab Kit": 4,
+            "Apex Structural Elements": 3
+        }
+    },
+    {
+        "name": "Advanced Gas Collector",
+        "tier": 3,
+        "category": "Extraction",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 5,
+            "Industrial Machinery": 2,
+            "Advanced Construction Kit": 4,
+            "Advanced Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Foundry",
+        "tier": 2,
+        "category": "Research",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 1
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Construction Kit": 5,
+            "Structural Elements": 5,
+            "Modern Prefab Kit": 5
+        }
+    },
+    {
+        "name": "Nanomaterial Lab",
+        "tier": 3,
+        "category": "Agriculture",
+        "workforce": {
+            "workers": 75,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Structural Elements": 3,
+            "Industrial Machinery": 2,
+            "Advanced Construction Kit": 3,
+            "Advanced Prefab Kit": 4
+        }
+    },
+    {
+        "name": "Quantum Factory",
+        "tier": 4,
+        "category": "Storage",
+        "workforce": {
+            "workers": 40,
+            "worker_index": 2
+        },
+        "workforce_type": "consumer",
+        "ingredients": {
+            "Industrial Machinery": 3,
+            "Advanced Construction Kit": 3,
+            "Apex Prefab Kit": 5,
+            "Apex Structural Elements": 3
+        }
+    }
+]
