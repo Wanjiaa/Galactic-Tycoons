@@ -1,7 +1,4 @@
-name: Deploy to GitHub Pages (Static Version)
-
-# ⚠️ IMPORTANT: This workflow is for STATIC-ONLY version
-# Laravel backend features will NOT work on GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -34,14 +31,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build assets
+      - name: Build assets with Vite
         run: npm run build
 
-      - name: Prepare static files
+      - name: Prepare static site
         run: |
           mkdir -p _site
+          # Copy all public files
           cp -r public/* _site/
-          cp -r resources/js/galactic-tycoons/data _site/data
+          # Ensure data directory exists in public output
+          mkdir -p _site/data
+          # Copy JSON data files to public data folder
+          cp resources/js/galactic-tycoons/data/*.json _site/data/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -61,6 +62,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 # GitHub Pages Setup voor Galactic Tycoons
 
 ## ⚠️ Belangrijk
