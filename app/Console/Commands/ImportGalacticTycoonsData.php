@@ -121,12 +121,12 @@ class ImportGalacticTycoonsData extends Command
 
     /**
      * Clean old JSON files
-        $files = ['items.json', 'recipes.json', 'buildings.json', 'workers.json', 'systems.json'];
+     */
     private function cleanOldFiles()
     {
         $this->info('🧹 Cleaning old files...');
 
-        $files = ['items.json', 'recipes.json', 'buildings.json', 'workers.json'];
+        $files = ['items.json', 'recipes.json', 'buildings.json', 'workers.json', 'systems.json'];
 
         foreach ($files as $file) {
             $path = $this->dataPath . '/' . $file;

@@ -4,12 +4,16 @@
 // ========================================
 
 import './sidebar-nav.js';
-import systemsData from './data/systems.json';
+
+// Import JSON data
+import systemsDataRaw from './data/systems.json?raw';
+import buildingsDataRaw from './data/buildings.json?raw';
+
+const systemsData = JSON.parse(systemsDataRaw);
+const buildingsData = JSON.parse(buildingsDataRaw);
 
 document.addEventListener('DOMContentLoaded', function () {
-    const API_URL = '/api/galactic-tycoons/buildings';
-
-    let buildings = [];
+    let buildings = buildingsData;
     let prices = {};
     let activeTier = 1;
     let activeSystem = 0;
@@ -109,27 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     async function loadBuildings() {
-        try {
-            const response = await fetch(API_URL);
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-            const data = await response.json();
-            if (data.error) throw new Error(data.error);
-            if (!Array.isArray(data)) throw new Error('Invalid data format');
-
-            buildings = data;
-            console.log('Loaded buildings:', buildings.length);
-            renderSystemTabs();
-            renderBuildings();
-        } catch (error) {
-            console.error('Failed to load buildings:', error);
-            const container = document.getElementById('buildingsList');
-            if (container) {
-                container.innerHTML = '<p class="muted">❌ Error loading buildings: ' + error.message + '</p>';
-            }
-        }
-    }
-
     function renderSystemTabs() {
         const container = document.getElementById('systemTabs');
         if (!container) return;

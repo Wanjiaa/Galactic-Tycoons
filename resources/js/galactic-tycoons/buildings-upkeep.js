@@ -5,12 +5,16 @@
 
 import './sidebar-nav.js';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const API_URL = '/api/galactic-tycoons/buildings';
-    const WORKERS_API_URL = '/api/galactic-tycoons/workers';
+// Import JSON data
+import buildingsDataRaw from './data/buildings.json?raw';
+import workersDataRaw from './data/workers.json?raw';
 
-    let buildings = [];
-    let workersData = [];
+const buildingsData = JSON.parse(buildingsDataRaw);
+const workersData = JSON.parse(workersDataRaw);
+
+document.addEventListener('DOMContentLoaded', function () {
+    let buildings = buildingsData;
+    let workersDataArray = workersData;
     let prices = {};
     let activeWorkerTab = 0;
     let upkeepSystemFilter = 'all';
@@ -95,6 +99,42 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!Array.isArray(data)) throw new Error('Invalid data format');
 
             workersData = data;
+            workersData = data;
+            console.log('Loaded workers:', workersData.length);
+            renderUpkeepCalculator();
+        } catch (error) {
+            console.error('Failed to load workers:', error);
+            const container = document.getElementById('upkeepSummaryGrid');
+            if (container) {
+                container.innerHTML = '<p class="muted">❌ Failed to load worker data</p>';
+            }
+        });
+    }
+
+    async function loadBuildings() {
+        try {
+            const response = await fetch(API_URL);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            if (data.error) throw new Error(data.error);
+            if (!Array.isArray(data)) throw new Error('Invalid data format');
+
+            buildings = data;
+            console.log('Loaded buildings:', buildings.length);
+            renderUpkeepCalculator();
+        } catch (error) {
+            console.error('Failed to load buildings:', error);
+        }
+    }
+
+    async function loadWorkers() {
+        try {
+            const response = await fetch(WORKERS_API_URL);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            if (data.error) throw new Error(data.error);
+            if (!Array.isArray(data)) throw new Error('Invalid data format');
+
             console.log('Loaded workers:', workersData.length);
             renderUpkeepCalculator();
         } catch (error) {
@@ -137,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const building = buildings.find(m => m.name === buildingName);
                 if (!building || !building.workforce || !building.workforce.workers) return;
-                if (building.workforce_type !== 'consumer') return;
+                const workerData = workersDataArray[workerIndex];
 
                 const workerIndex = building.workforce.worker_index;
                 if (workerIndex === undefined) return;
@@ -153,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 workersByIndex[workerIndex] += totalWorkers;
             });
-        });
+        const workerData = workersDataArray[displayWorkerIndex];
 
         const totalUsedWorkers = Object.values(workersByIndex).reduce((sum, count) => sum + count, 0);
 
@@ -211,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 totalUpkeepCost += cost;
 
                 const essentialBadge = consumable.essential ? '<span class="essential-badge">Essential</span>' : '';
-                const bonusInfo = consumable.bonusPercent ? `<span class="bonus-badge">+${consumable.bonusPercent}%</span>` : '';
+                const data = workersDataArray[workerIndex];
 
                 html += `
                     <div class="consumable-item ${consumable.essential ? 'essential' : ''}">
@@ -242,9 +282,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         html += '</div>';
 
-        if (usedWorkerIndices.length > 1) {
-            let allWorkersCost = 0;
+    console.log('Loaded buildings:', buildings.length);
+    console.log('Loaded workers:', workersDataArray.length);
             usedWorkerIndices.forEach(workerIndex => {
+    renderUpkeepCalculator();
                 const count = workersByIndex[workerIndex];
                 const data = workersData[workerIndex];
                 if (data && data.consumables) {

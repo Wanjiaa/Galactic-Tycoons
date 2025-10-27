@@ -5,10 +5,13 @@
 
 import './sidebar-nav.js';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const API_URL = '/api/galactic-tycoons/buildings';
+// Import JSON data
+import buildingsDataRaw from './data/buildings.json?raw';
 
-    let buildings = [];
+const buildingsData = JSON.parse(buildingsDataRaw);
+
+document.addEventListener('DOMContentLoaded', function () {
+    let buildings = buildingsData;
     let workforceSystemFilter = 'all';
 
     let galaxyConfig = JSON.parse(localStorage.getItem('gt_galaxy_config_v2') || '{"hqLevel": 1, "systems": [{"name": "Genesis Core", "buildings": {}}]}');
@@ -62,6 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!Array.isArray(data)) throw new Error('Invalid data format');
 
             buildings = data;
+            buildings = data;
+            console.log('Loaded buildings:', buildings.length);
+            updateWorkforceCalculator();
+        } catch (error) {
+            console.error('Failed to load buildings:', error);
+        });
+    }
+
+    async function loadBuildings() {
+        try {
+            const response = await fetch(API_URL);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            if (data.error) throw new Error(data.error);
+            if (!Array.isArray(data)) throw new Error('Invalid data format');
+
             console.log('Loaded buildings:', buildings.length);
             updateWorkforceCalculator();
         } catch (error) {
@@ -198,8 +217,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="breakdown-item consumer">
                         <div class="item-info">
                             <span class="item-name">${item.name}</span>
-                            <span class="item-planet">${item.system}</span>
+    console.log('Loaded buildings:', buildings.length);
                         </div>
+    updateWorkforceCalculator();
                         <span class="item-detail">${levelText}</span>
                         <span class="item-workers">${item.workers.toLocaleString()}</span>
                     </div>
