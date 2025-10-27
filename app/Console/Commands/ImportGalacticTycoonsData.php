@@ -63,6 +63,7 @@ class ImportGalacticTycoonsData extends Command
             $this->line('   - Buildings: ' . count($data['buildings'] ?? []));
             $this->line('   - Recipes: ' . count($data['recipes'] ?? []));
             $this->line('   - Workers: ' . count($data['workers'] ?? []));
+            $this->line('   - Systems: ' . count($data['systems'] ?? []));
             $this->newLine();
 
             // Cache materials and buildings first for ID lookups
@@ -96,6 +97,12 @@ class ImportGalacticTycoonsData extends Command
             $this->saveJson('workers.json', $workers);
             $this->info('✅ workers.json created (' . count($workers) . ' worker types)');
 
+            // Process systems → systems.json (from API systems data)
+            $this->info('📦 Processing systems → systems.json...');
+            $systems = $this->processSystems($data['systems'] ?? []);
+            $this->saveJson('systems.json', $systems);
+            $this->info('✅ systems.json created (' . count($systems) . ' systems)');
+
             $this->newLine();
             $this->info('🎉 Import completed successfully!');
             $this->newLine();
@@ -114,7 +121,7 @@ class ImportGalacticTycoonsData extends Command
 
     /**
      * Clean old JSON files
-     */
+        $files = ['items.json', 'recipes.json', 'buildings.json', 'workers.json', 'systems.json'];
     private function cleanOldFiles()
     {
         $this->info('🧹 Cleaning old files...');
@@ -574,14 +581,14 @@ class ImportGalacticTycoonsData extends Command
 
         // Worker type mapping - API uses indices 0-3
         $typeNames = [
-            0 => 'Worker',
-            1 => 'Technician',
-            2 => 'Engineer',
-            3 => 'Scientist',
+            1 => 'Worker',
+            2 => 'Technician',
+            3 => 'Engineer',
+            4 => 'Scientist',
         ];
 
         foreach ($workers as $worker) {
-            $typeId   = $worker['type'] ?? 0;
+            $typeId   = $worker['type'] ?? 1;
             $typeName = $typeNames[$typeId] ?? "Worker_Type_{$typeId}";
 
             $adminCost = (int) ($worker['adminCost'] ?? 0);
@@ -640,6 +647,103 @@ class ImportGalacticTycoonsData extends Command
                 'productionBonus' => $productionBonus,
                 'consumables'     => $consumables,
             ];
+        }
+
+        return $processed;
+    }
+
+    /**
+     * Process systems into systems.json format
+     * Extract systems with planets and their resources
+     * API Structure: {
+     *   "id": 13,
+     *   "name": "Seashell",
+     *   "planets": [
+     *     {
+     *       "id": 1,
+     *       "name": "Seashell 1",
+     *       "type": 2,
+     *       "x": 1671,
+     *       "y": 176,
+     *       "fert": 0,
+     *       "size": 8,
+     *       "tier": 1,
+     *       "mats": [
+     *         { "id": 8, "ab": 101 },
+     *         { "id": 24, "ab": 91 }
+     *       ]
+     *     }
+     *   ]
+     * }
+     */
+    private function processSystems(array $systems): array
+    {
+        $processed = [];
+        $hqLevel = 1;
+
+        foreach ($systems as $system) {
+            // Skip systems without planets (empty clusters)
+            if (!isset($system['planets']) || empty($system['planets'])) {
+                continue;
+            }
+
+            $systemId = $system['id'] ?? 0;
+            $systemName = $system['name'] ?? "System {$systemId}";
+            $systemX = $system['x'] ?? 0;
+            $systemY = $system['y'] ?? 0;
+
+            // Process planets
+            $planets = [];
+            foreach ($system['planets'] as $planet) {
+                $planetId = $planet['id'] ?? 0;
+                $planetName = $planet['name'] ?? "Planet {$planetId}";
+                $planetX = $planet['x'] ?? 0;
+                $planetY = $planet['y'] ?? 0;
+                $fertility = $planet['fert'] ?? 0;
+
+                // Process materials with their abundance
+                $materials = [];
+                if (isset($planet['mats']) && is_array($planet['mats'])) {
+                    foreach ($planet['mats'] as $mat) {
+                        $materialId = $mat['id'] ?? null;
+                        $abundance = $mat['ab'] ?? 0;
+
+                        if ($materialId !== null) {
+                            $materialName = $this->getMaterialNameById($materialId);
+                            $materials[] = [
+                                'name' => $materialName,
+                                'abundance' => $abundance
+                            ];
+                        }
+                    }
+                }
+
+                $planets[] = [
+                    'id' => $planetId,
+                    'name' => $planetName,
+                    'x' => $planetX,
+                    'y' => $planetY,
+                    'fertility' => $fertility,
+                    'materials' => $materials
+                ];
+            }
+
+            $processed[] = [
+                'id' => $systemId,
+                'name' => $systemName,
+                'hq_level_required' => $hqLevel,
+                'is_starter' => $hqLevel === 1,
+                'x' => $systemX,
+                'y' => $systemY,
+                'planets' => $planets
+            ];
+
+            $hqLevel++;
+
+            // Limit to 10 systems (HQ levels 1-10)
+            if ($hqLevel > 10) {
+                break;
+            }
         }
 
         return $processed;

@@ -4,34 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Machine Planner - Galactic Tycoons</title>
-
-    <script>
-        // Pass items data to JavaScript for weight calculations
-        window.gtItems = @json($items ?? []);
-        console.log('Planner: Loaded items with weights:', window.gtItems.length);
-    </script>
+    <title>Building Planner - Galactic Tycoons</title>
 
     @vite(['resources/sass/galactic-tycoons/shared.scss', 'resources/js/galactic-tycoons/planner.js'])
+
+    <script>
+        // Make items data available globally for weight calculations
+        window.gtItems = @json($items ?? []);
+    </script>
 </head>
 <body>
 @include('galactic-tycoons.partials.nav')
 
 <div class="gt-page-content">
     <header class="gt-page-header">
-        <h1>🔮 Machine Planner</h1>
+        <h1>🔮 Building Planner</h1>
     </header>
 
     <div class="gt-main-content">
+        <div class="info-card">
+            <h3>ℹ️ Plan je toekomstige machines</h3>
+            <p>Selecteer machines die je wilt bouwen en zie direct de impact op kosten, upkeep en workforce.</p>
+            <p><strong>Kosten:</strong> Basis cost + 1 van elk materiaal per level.</p>
+        </div>
+
         <div class="card">
             <div class="card-header">
-                <h2>Plan je toekomstige machines</h2>
+                <h2>📊 Resultaten</h2>
             </div>
             <div class="card-body">
-                <div class="planner-instructions">
-                    <p>Selecteer machines die je wilt bouwen en zie direct de impact op kosten, upkeep en workforce.</p>
+                <div id="plannerStats">
+                    <p class="muted">Voeg buildings toe om de kosten en impact te zien...</p>
                 </div>
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Planning</h2>
+            </div>
+            <div class="card-body">
                 <div class="planner-mode-selector">
                     <button class="mode-btn active" data-mode="new" id="modeNewBtn">➕ Nieuwe Buildings</button>
                     <button class="mode-btn" data-mode="upgrade" id="modeUpgradeBtn">⬆️ Upgrades</button>

@@ -1,0 +1,164 @@
+name: Deploy to GitHub Pages (Static Version)
+
+# ⚠️ IMPORTANT: This workflow is for STATIC-ONLY version
+# Laravel backend features will NOT work on GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build assets
+        run: npm run build
+
+      - name: Prepare static files
+        run: |
+          mkdir -p _site
+          cp -r public/* _site/
+          cp -r resources/js/galactic-tycoons/data _site/data
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+# GitHub Pages Setup voor Galactic Tycoons
+
+## ⚠️ Belangrijk
+
+Deze Laravel applicatie is **niet direct geschikt** voor GitHub Pages omdat:
+- GitHub Pages host alleen **statische HTML/CSS/JS** files
+- Laravel vereist PHP server-side processing
+- De API endpoints (`/api/galactic-tycoons/*`) werken niet op GitHub Pages
+
+## 🔧 Oplossingen
+
+### Optie 1: Gebruik een PHP Hosting Service (Aanbevolen)
+
+Deploy naar een Laravel-vriendelijke host:
+- **Laravel Forge** - Professionele Laravel deployment
+- **DigitalOcean** - VPS met Laravel setup
+- **Heroku** - Gratis tier beschikbaar
+- **AWS / Azure** - Enterprise oplossingen
+
+### Optie 2: Convert naar Static Site (Vereist Aanpassingen)
+
+Om GitHub Pages te gebruiken, moet je:
+
+1. **Alle JSON data hard-coden** in de JavaScript files
+2. **API calls verwijderen** en vervangen door lokale data
+3. **Build static files**:
+   ```bash
+   npm run build
+   cp -r public/* docs/
+   ```
+4. **GitHub Pages configureren** om de `docs/` folder te gebruiken
+
+### Optie 3: Hybride Oplossing
+
+- **GitHub Pages** voor frontend (HTML/CSS/JS)
+- **Externe API** voor backend (Laravel op andere hosting)
+- Configureer CORS juist
+
+## 📝 Als je toch GitHub Pages wilt gebruiken
+
+1. **Create docs folder**:
+   ```bash
+   mkdir -p docs
+   ```
+
+2. **Build en kopieer assets**:
+   ```bash
+   npm run build
+   cp -r public/* docs/
+   ```
+
+3. **Verplaats JSON data naar public folder**:
+   ```bash
+   cp resources/js/galactic-tycoons/data/*.json public/data/
+   ```
+
+4. **Update JavaScript** om JSON van `/data/*.json` te laden
+
+5. **Push naar GitHub**:
+   ```bash
+   git add .
+   git commit -m "Setup for GitHub Pages"
+   git push origin main
+   ```
+
+6. **Configureer GitHub Pages**:
+   - Ga naar repository Settings > Pages
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: /docs
+   - Save
+
+## 🚀 Snelle Alternatief: Vercel/Netlify
+
+Voor een Laravel app zijn **Vercel** of **Netlify** betere opties dan GitHub Pages:
+
+### Vercel (Gratis tier):
+```bash
+npm i -g vercel
+vercel
+```
+
+### Netlify (Gratis tier):
+```bash
+npm i -g netlify-cli
+netlify deploy
+```
+
+Beide supporten server-side rendering en zijn gratis voor kleine projecten!
+
+## 💡 Aanbeveling
+
+Voor deze applicatie raad ik **Laravel Forge** of **DigitalOcean** aan omdat:
+- ✅ Volledige Laravel support
+- ✅ Database migraties werken
+- ✅ API endpoints werken correct
+- ✅ Geen code aanpassingen nodig
+- ✅ Easy deployment
+
+GitHub Pages is alleen geschikt als je de hele app omzet naar een pure frontend applicatie zonder backend.
+

@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Gaia Prime",
+    "description": "Your starter base - a lush, resource-rich world perfect for establishing your galactic empire",
+    "hq_level_required": 1,
+    "is_starter": true
+  },
+  {
+    "id": 2,
+    "name": "Titan's Reach",
+    "description": "A harsh industrial world with abundant raw materials",
+    "hq_level_required": 2,
+    "is_starter": false
+  },
+  {
+    "id": 3,
+    "name": "Nova Centauri",
+    "description": "A technologically advanced colony in a strategic location",
+    "hq_level_required": 3,
+    "is_starter": false
+  },
+  {
+    "id": 4,
+    "name": "Crimson Forge",
+    "description": "A volcanic world ideal for heavy manufacturing",
+    "hq_level_required": 4,
+    "is_starter": false
+  },
+  {
+    "id": 5,
+    "name": "Azure Haven",
+    "description": "An oceanic paradise with unique biological resources",
+    "hq_level_required": 5,
+    "is_starter": false
+  },
+  {
+    "id": 6,
+    "name": "Obsidian Outpost",
+    "description": "A dark, mysterious world on the frontier of known space",
+    "hq_level_required": 6,
+    "is_starter": false
+  },
+  {
+    "id": 7,
+    "name": "Golden Expanse",
+    "description": "A wealthy trading hub at the crossroads of commerce",
+    "hq_level_required": 7,
+    "is_starter": false
+  },
+  {
+    "id": 8,
+    "name": "Frost Dominion",
+    "description": "An icy research station with cutting-edge facilities",
+    "hq_level_required": 8,
+    "is_starter": false
+  },
+  {
+    "id": 9,
+    "name": "Emerald Sanctuary",
+    "description": "A protected biosphere teeming with life",
+    "hq_level_required": 9,
+    "is_starter": false
+  },
+  {
+    "id": 10,
+    "name": "Apex Nexus",
+    "description": "The crown jewel of your empire - unlimited potential",
+    "hq_level_required": 10,
+    "is_starter": false
+  }
+]
+

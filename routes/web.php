@@ -20,6 +20,9 @@ Route::prefix('/api/galactic-tycoons')->group(function () {
     Route::get('/recipes', [RecipesController::class, 'get']);
     Route::post('/recipes', [RecipesController::class, 'save']);
 
+    // Machines API
+    Route::get('/machines', [RecipesController::class, 'getMachines']);
+
     // Buildings API
     Route::get('/buildings', [BuildingsController::class, 'get']);
 
@@ -52,9 +55,22 @@ Route::prefix('/galactic-tycoons')->group(function () {
     Route::get('/recipes', [RecipesController::class, 'index'])
         ->name('galactic-tycoons.recipes');
 
-    // Buildings Management
-    Route::get('/buildings', [BuildingsController::class, 'index'])
-        ->name('galactic-tycoons.buildings');
+    // Buildings Management (old combined page - redirect to systems)
+    Route::get('/buildings', function () {
+        return redirect()->route('galactic-tycoons.buildings.systems');
+    })->name('galactic-tycoons.buildings');
+
+    // Buildings per System
+    Route::get('/buildings/systems', [BuildingsController::class, 'systems'])
+        ->name('galactic-tycoons.buildings.systems');
+
+    // Worker Upkeep
+    Route::get('/buildings/upkeep', [BuildingsController::class, 'upkeep'])
+        ->name('galactic-tycoons.buildings.upkeep');
+
+    // Workforce Summary
+    Route::get('/buildings/workforce', [BuildingsController::class, 'workforce'])
+        ->name('galactic-tycoons.buildings.workforce');
 
     // Calculator
     Route::get('/calculator', [CalculatorController::class, 'index'])

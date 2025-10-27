@@ -1,0 +1,696 @@
+// ========================================
+// Multi-Planet Buildings Styling
+// ========================================
+
+// HQ Management Panel
+.hq-management {
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 2px solid #0f3460;
+}
+
+.hq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #00d4ff;
+    }
+}
+
+.hq-level-display {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hq-level-badge {
+    background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.hq-planets-info {
+    color: #95a5a6;
+    font-size: 0.95rem;
+}
+
+// HQ Upgrade Section
+.hq-upgrade-section {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    h4 {
+        margin: 0 0 1rem 0;
+        color: #3498db;
+        font-size: 1.2rem;
+    }
+}
+
+.hq-upgrade-cost {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+
+    .cost-item {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 1rem;
+        align-items: center;
+        padding: 0.75rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+
+        .material-name {
+            color: #ecf0f1;
+            font-weight: 500;
+        }
+
+        .material-amount {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .material-cost {
+            color: #2ecc71;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+
+    .cost-total {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background: rgba(46, 204, 113, 0.15);
+        border-radius: 6px;
+        border: 2px solid #2ecc71;
+        margin-top: 0.5rem;
+
+        strong {
+            color: #2ecc71;
+            font-size: 1.1rem;
+        }
+
+        .total-value {
+            color: #2ecc71;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.hq-upgrade-benefits {
+    padding: 1rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+
+    p {
+        margin: 0;
+        color: #3498db;
+        font-weight: 500;
+    }
+}
+
+.hq-max-level {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    p {
+        margin: 0;
+        font-size: 1.3rem;
+        color: #2ecc71;
+        font-weight: bold;
+    }
+}
+
+.hq-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+}
+
+// Planet Selector
+.planet-selector {
+    margin-bottom: 1.5rem;
+}
+
+.planet-tabs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.planet-tab {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(52, 152, 219, 0.5);
+        transform: translateY(-2px);
+    }
+
+    &.active {
+        background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(46, 204, 113, 0.2) 100%);
+        border-color: #3498db;
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    }
+
+    &.add-planet-tab {
+        background: rgba(46, 204, 113, 0.1);
+        border: 2px dashed rgba(46, 204, 113, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        &:hover {
+            background: rgba(46, 204, 113, 0.2);
+            border-color: #2ecc71;
+        }
+
+        .add-planet-icon {
+            font-size: 2rem;
+            color: #2ecc71;
+        }
+
+        .add-planet-text {
+            color: #2ecc71;
+            font-weight: 500;
+        }
+    }
+
+    &.locked-planet {
+        background: rgba(255, 255, 255, 0.02);
+        border: 2px dashed rgba(255, 255, 255, 0.1);
+        cursor: not-allowed;
+        opacity: 0.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .locked-icon {
+            font-size: 2rem;
+            color: #7f8c8d;
+        }
+
+        .locked-text {
+            color: #95a5a6;
+            font-weight: 500;
+        }
+
+        .locked-hint {
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+    }
+}
+
+.planet-tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.planet-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+.planet-rename-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.planet-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planet-buildings-count {
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+// Planet Header in Buildings List
+.planet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    h3 {
+        margin: 0;
+        color: #3498db;
+        font-size: 1.3rem;
+    }
+}
+
+.planet-actions {
+    display: flex;
+    gap: 0.5rem;
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+// Workforce Breakdown with Planet Info
+.breakdown-item {
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .item-planet {
+        color: #95a5a6;
+        font-size: 0.85rem;
+        font-style: italic;
+    }
+}
+
+// Button Variants
+.btn-danger {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    border: none;
+
+    &:hover {
+        background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+    }
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #7f8c8d 0%, #95a5a6 100%);
+    color: white;
+    border: none;
+
+    &:hover {
+        background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(127, 140, 141, 0.4);
+    }
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .planet-tabs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hq-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .hq-level-display {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .hq-actions {
+        flex-direction: column;
+        width: 100%;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .planet-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+
+        .planet-actions {
+            width: 100%;
+
+            .btn {
+                flex: 1;
+            }
+        }
+    }
+}
+
+// ========================================
+// Upkeep Calculator with Worker Type Tabs
+// ========================================
+
+.upkeep-worker-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    overflow-x: auto;
+    padding-bottom: 0;
+}
+
+.upkeep-worker-tab {
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    min-width: 140px;
+    margin-bottom: -2px;
+
+    &:hover {
+        background: rgba(52, 152, 219, 0.1);
+
+        .tab-name {
+            color: #3498db;
+        }
+    }
+
+    &.active {
+        border-bottom-color: #3498db;
+        background: rgba(52, 152, 219, 0.15);
+
+        .tab-name {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .tab-count {
+            color: #2ecc71;
+        }
+    }
+
+    .tab-name {
+        color: #ecf0f1;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .tab-count {
+        color: #95a5a6;
+        font-size: 0.85rem;
+        transition: color 0.2s ease;
+    }
+}
+
+.upkeep-content {
+    margin-top: 1.5rem;
+}
+
+.upkeep-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    .upkeep-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+        h4 {
+            margin: 0;
+            color: #3498db;
+            font-size: 1.3rem;
+        }
+
+        .worker-count-display {
+            background: rgba(46, 204, 113, 0.15);
+            color: #2ecc71;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}
+
+.upkeep-total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+
+    .total-label {
+        color: #3498db;
+        font-weight: 600;
+        font-size: 1.05rem;
+    }
+
+    .total-value {
+        color: #2ecc71;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+.upkeep-grand-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2) 0%, rgba(52, 152, 219, 0.2) 100%);
+    border-radius: 12px;
+    border: 2px solid #2ecc71;
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+
+    .grand-total-label {
+        color: #2ecc71;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .grand-total-value {
+        color: #2ecc71;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// Responsive adjustments for upkeep tabs
+@media (max-width: 768px) {
+    .upkeep-worker-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .upkeep-worker-tab {
+        min-width: 120px;
+        padding: 0.75rem 1rem;
+    }
+
+    .upkeep-card .upkeep-card-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .upkeep-total-section,
+    .upkeep-grand-total {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+}
+
+// ========================================
+// HQ Level Selector (Simple, in Tier 0)
+// ========================================
+
+.hq-level-selector {
+    margin: 2rem 0;
+}
+
+.hq-info-box {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(46, 204, 113, 0.1) 100%);
+    border: 2px solid rgba(52, 152, 219, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.hq-info-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        font-weight: 600;
+        color: #3498db;
+        font-size: 1.1rem;
+        min-width: 220px;
+    }
+}
+
+.hq-level-select {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    color: #ecf0f1;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: rgba(52, 152, 219, 0.2);
+        border-color: #2ecc71;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+    }
+
+    option {
+        background: #1a1a2e;
+        color: #ecf0f1;
+    }
+}
+
+.hq-info-text {
+    color: #ecf0f1;
+    font-size: 1rem;
+
+    strong {
+        color: #3498db;
+    }
+
+    .muted {
+        color: #95a5a6;
+        font-size: 0.9rem;
+    }
+}
+
+.hq-help-text {
+    margin: 1rem 0 0 0;
+    padding: 0.75rem 1rem;
+    background: rgba(46, 204, 113, 0.1);
+    border-left: 4px solid #2ecc71;
+    border-radius: 4px;
+    color: #2ecc71;
+    font-size: 0.95rem;
+}
+
+// Header actions styling
+.gt-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    h1 {
+        margin: 0;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .gt-page-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .header-actions {
+            width: 100%;
+
+            .btn {
+                flex: 1;
+            }
+        }
+    }
+
+    .hq-info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        label {
+            min-width: auto;
+        }
+    }
+
+    .hq-level-select {
+        width: 100%;
+    }
+}

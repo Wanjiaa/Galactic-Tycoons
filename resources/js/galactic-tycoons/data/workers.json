@@ -1,6 +1,6 @@
 [
     {
-        "type": "Technician",
+        "type": "Worker",
         "adminCost": 100,
         "productionBonus": 100,
         "consumables": [
@@ -43,7 +43,7 @@
         ]
     },
     {
-        "type": "Engineer",
+        "type": "Technician",
         "adminCost": 150,
         "productionBonus": 100,
         "consumables": [
@@ -86,7 +86,7 @@
         ]
     },
     {
-        "type": "Scientist",
+        "type": "Engineer",
         "adminCost": 250,
         "productionBonus": 100,
         "consumables": [
@@ -129,7 +129,7 @@
         ]
     },
     {
-        "type": "Worker_Type_4",
+        "type": "Scientist",
         "adminCost": 400,
         "productionBonus": 100,
         "consumables": [

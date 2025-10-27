@@ -12,7 +12,7 @@ class RecipesController extends Controller
 
         $recipes = $this->loadJsonFile($dataPath . '/recipes.json');
         $items = $this->loadJsonFile($dataPath . '/items.json');
-        $machines = $this->loadJsonFile($dataPath . '/machines.json');
+        $machines = $this->loadJsonFile($dataPath . '/buildings.json');
 
         return view('galactic-tycoons.recipes', [
             'recipes' => $recipes,
@@ -29,6 +29,14 @@ class RecipesController extends Controller
         return response()->json($recipes);
     }
 
+    public function getMachines()
+    {
+        $dataPath = resource_path('js/galactic-tycoons/data');
+        $machines = $this->loadJsonFile($dataPath . '/machines.json');
+
+        return response()->json($machines);
+    }
+
     private function loadJsonFile(string $path): array
     {
         if (!file_exists($path)) {
@@ -41,4 +49,3 @@ class RecipesController extends Controller
         return is_array($decoded) ? $decoded : [];
     }
 }
-

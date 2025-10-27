@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     loadItemsData();
 
-    // Load prices from localStorage
     function loadPrices() {
         const storedPrices = localStorage.getItem('gt_prices_v1');
         if (storedPrices) {
@@ -220,33 +219,55 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        let html = '<div class="upgrade-grid">';
+        let html = '<div class="upgrade-list-container">';
 
         currentBuildings.forEach(buildingName => {
             const config = buildingConfig[buildingName];
             const building = buildings.find(m => m.name === buildingName);
             if (!building) return;
 
-            html += `<div class="upgrade-card">
+            // Check if any upgrades are planned
+            const hasUpgrades = config.levels.some((currentLevel, index) => {
+                const targetLevel = (plannedBuildings[`${buildingName}_${index}`] || {}).targetLevel || currentLevel;
+                return targetLevel > currentLevel;
+            });
+
+            // Calculate total upgrades for this building
+            let totalUpgradeLevels = 0;
+            config.levels.forEach((currentLevel, index) => {
+                const targetLevel = (plannedBuildings[`${buildingName}_${index}`] || {}).targetLevel || currentLevel;
+                totalUpgradeLevels += (targetLevel - currentLevel);
+            });
+
+            html += `<div class="upgrade-card ${hasUpgrades ? 'has-upgrades' : ''}">
                 <div class="upgrade-header">
-                    <strong>${buildingName}</strong>
-                    <span class="tier-badge">Tier ${building.tier}</span>
+                    <div class="upgrade-title">
+                        <strong>${buildingName}</strong>
+                        <span class="tier-badge tier-${building.tier}">Tier ${building.tier}</span>
+                    </div>
+                    ${hasUpgrades ? `<span class="upgrade-badge">⬆️ ${totalUpgradeLevels} LEVEL${totalUpgradeLevels > 1 ? 'S' : ''} UPGRADE</span>` : '<span class="no-upgrade-badge">Geen upgrade</span>'}
                 </div>
                 <div class="upgrade-instances">`;
 
             config.levels.forEach((currentLevel, index) => {
                 const targetLevel = (plannedBuildings[`${buildingName}_${index}`] || {}).targetLevel || currentLevel;
+                const isUpgrading = targetLevel > currentLevel;
+                const levelDiff = targetLevel - currentLevel;
 
                 html += `
-                    <div class="upgrade-instance">
-                        <span class="instance-label">#${index + 1}:</span>
-                        <span class="current-level">Lvl ${currentLevel}</span>
-                        <span class="arrow">→</span>
-                        <input type="number" min="${currentLevel}" max="10" value="${targetLevel}"
-                               class="upgrade-target-input" 
-                               data-building="${buildingName}" 
-                               data-index="${index}"
-                               data-current-level="${currentLevel}">
+                    <div class="upgrade-instance ${isUpgrading ? 'is-upgrading' : ''}">
+                        <span class="instance-label">${buildingName} #${index + 1}</span>
+                        <div class="upgrade-controls">
+                            <span class="current-level">Lvl ${currentLevel}</span>
+                            <span class="arrow">${isUpgrading ? '⬆️' : '→'}</span>
+                            <input type="number" min="${currentLevel}" max="10" value="${targetLevel}"
+                                   class="upgrade-target-input ${isUpgrading ? 'upgrading' : ''}" 
+                                   data-building="${buildingName}" 
+                                   data-index="${index}"
+                                   data-current-level="${currentLevel}"
+                                   title="Target level voor ${buildingName} #${index + 1}">
+                            ${isUpgrading ? `<span class="upgrade-indicator">+${levelDiff} level${levelDiff > 1 ? 's' : ''}</span>` : ''}
+                        </div>
                     </div>
                 `;
             });
@@ -283,6 +304,8 @@ document.addEventListener('DOMContentLoaded', function () {
             isUpgrade: true
         };
 
+        // Re-render the upgrade list to update visual indicators
+        renderUpgradeList();
         calculateResults();
     }
 
@@ -303,6 +326,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.target.value = plannedBuildings[buildingName].level;
         }
 
+        console.log('Planner input changed:', buildingName, plannedBuildings[buildingName]);
         calculateResults();
     }
 
@@ -312,24 +336,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let totalBuildCost = 0;
         let totalWorkforceImpact = 0;
-        let totalWeight = 0; // New: total weight calculation
+        let totalWeight = 0;
         let buildMaterialsNeeded = {};
         let workforceBreakdown = {providers: 0, consumers: 0};
 
-        // Calculate for each planned building
+        console.log('Calculating results for:', plannedBuildings);
+
+        // Calculate for NEW buildings
         Object.entries(plannedBuildings).forEach(([buildingName, plan]) => {
-            if (plan.isUpgrade) return; // Skip upgrades for now in materials
-            if (plan.count === 0) return;
+            if (plan.isUpgrade) return; // Handle upgrades separately
+            if (!plan.count || plan.count === 0) return;
 
             const building = buildings.find(m => m.name === buildingName);
-            if (!building) return;
+            if (!building) {
+                console.warn('Building not found:', buildingName);
+                return;
+            }
 
-            // Build cost
+            console.log('Processing new building:', buildingName, 'count:', plan.count, 'level:', plan.level);
+
+            // Calculate construction materials with level scaling
+            // Formula: base_cost + (level - 1) per resource type
             if (building.ingredients) {
-                Object.entries(building.ingredients).forEach(([material, amount]) => {
-                    const totalAmount = amount * plan.count;
+                Object.entries(building.ingredients).forEach(([material, baseAmount]) => {
+                    // Each level adds 1 of each resource type
+                    const amountPerBuilding = baseAmount + (plan.level - 1);
+                    const totalAmount = amountPerBuilding * plan.count;
                     const price = prices[material] || 0;
                     const cost = totalAmount * price;
+
+                    console.log(`  Material ${material}: base=${baseAmount}, per building=${amountPerBuilding}, total=${totalAmount}, cost=${cost}`);
+
                     totalBuildCost += cost;
 
                     if (!buildMaterialsNeeded[material]) {
@@ -341,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Add weight calculation
                     const itemWeight = itemsData[material]?.weight || 0;
                     const materialWeight = itemWeight * totalAmount;
-                    buildMaterialsNeeded[material].weight = materialWeight;
+                    buildMaterialsNeeded[material].weight += materialWeight;
                     totalWeight += materialWeight;
                 });
             }
@@ -358,6 +395,64 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
+
+        // Calculate for UPGRADES
+        Object.entries(plannedBuildings).forEach(([key, plan]) => {
+            if (!plan.isUpgrade) return;
+
+            const building = buildings.find(m => m.name === plan.buildingName);
+            if (!building) {
+                console.warn('Building not found for upgrade:', plan.buildingName);
+                return;
+            }
+
+            console.log('Processing upgrade:', plan.buildingName, 'from level', plan.currentLevel, 'to', plan.targetLevel);
+
+            // Calculate upgrade costs (difference between levels)
+            if (building.ingredients) {
+                const currentLevel = plan.currentLevel;
+                const targetLevel = plan.targetLevel;
+
+                // Cost difference: sum of costs from current+1 to target level
+                for (let level = currentLevel + 1; level <= targetLevel; level++) {
+                    Object.entries(building.ingredients).forEach(([material, baseAmount]) => {
+                        // Cost for this level: base + (level - 1)
+                        const amountForLevel = baseAmount + (level - 1);
+                        const price = prices[material] || 0;
+                        const cost = amountForLevel * price;
+                        totalBuildCost += cost;
+
+                        if (!buildMaterialsNeeded[material]) {
+                            buildMaterialsNeeded[material] = {amount: 0, cost: 0, weight: 0};
+                        }
+                        buildMaterialsNeeded[material].amount += amountForLevel;
+                        buildMaterialsNeeded[material].cost += cost;
+
+                        // Add weight
+                        const itemWeight = itemsData[material]?.weight || 0;
+                        const materialWeight = itemWeight * amountForLevel;
+                        buildMaterialsNeeded[material].weight += materialWeight;
+                        totalWeight += materialWeight;
+                    });
+                }
+
+                // Workforce impact from upgrade
+                if (building.workforce && building.workforce.workers) {
+                    const levelDiff = targetLevel - currentLevel;
+                    const workers = building.workforce.workers * levelDiff;
+                    totalWorkforceImpact += building.workforce_type === 'provider' ? workers : -workers;
+
+                    if (building.workforce_type === 'provider') {
+                        workforceBreakdown.providers += workers;
+                    } else {
+                        workforceBreakdown.consumers += workers;
+                    }
+                }
+            }
+        });
+
+        console.log('Total materials needed:', buildMaterialsNeeded);
+        console.log('Total cost:', totalBuildCost, 'Weight:', totalWeight);
 
         // Render results
         let html = '<div class="planner-summary-grid">';
@@ -404,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Materials breakdown with weight
         if (Object.keys(buildMaterialsNeeded).length > 0) {
             html += '<div class="materials-breakdown">';
-            html += '<h4>📦 Benodigde Materialen (met gewicht):</h4>';
+            html += '<h4>📦 Benodigde Materialen:</h4>';
             html += '<div class="materials-list">';
 
             Object.entries(buildMaterialsNeeded)
@@ -442,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let totalUpkeep = 0;
                 if (worker.consumables) {
                     worker.consumables.forEach(consumable => {
-                        const amountPer100 = consumable.amount / 10; // Divided by 10 as per requirement
+                        const amountPer100 = consumable.amount / 10;
                         const actualAmount = (amountPer100 / 100) * workforceBreakdown.consumers;
                         const price = prices[consumable.material] || 0;
                         totalUpkeep += actualAmount * price;
@@ -453,9 +548,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="upkeep-projection-item">
                         <span class="worker-type">${worker.type}:</span>
                         <span class="upkeep-cost">€${totalUpkeep.toLocaleString(undefined, {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2
-                })}/day</span>
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        })}/day</span>
                     </div>
                 `;
             });

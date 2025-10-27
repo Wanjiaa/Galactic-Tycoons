@@ -34,13 +34,33 @@
             </span>
         </a>
 
-        <a href="{{ route('galactic-tycoons.buildings') }}"
-           class="sidebar-link {{ request()->routeIs('galactic-tycoons.buildings') ? 'active' : '' }}"
-           data-tooltip="Buildings">
+        <a href="{{ route('galactic-tycoons.buildings.systems') }}"
+           class="sidebar-link {{ request()->routeIs('galactic-tycoons.buildings.*') ? 'active' : '' }}"
+           data-tooltip="Buildings per System">
             <span class="link-icon">🏭</span>
             <span class="link-text">
                 <strong>Buildings</strong>
-                <small>Beheer buildings</small>
+                <small>Per System</small>
+            </span>
+        </a>
+
+        <a href="{{ route('galactic-tycoons.buildings.upkeep') }}"
+           class="sidebar-link {{ request()->routeIs('galactic-tycoons.buildings.upkeep') ? 'active' : '' }}"
+           data-tooltip="Worker Upkeep">
+            <span class="link-icon">💰</span>
+            <span class="link-text">
+                <strong>Upkeep</strong>
+                <small>Worker Costs</small>
+            </span>
+        </a>
+
+        <a href="{{ route('galactic-tycoons.buildings.workforce') }}"
+           class="sidebar-link {{ request()->routeIs('galactic-tycoons.buildings.workforce') ? 'active' : '' }}"
+           data-tooltip="Workforce Summary">
+            <span class="link-icon">👷</span>
+            <span class="link-text">
+                <strong>Workforce</strong>
+                <small>Balance & Stats</small>
             </span>
         </a>
 

@@ -19,6 +19,29 @@ class BuildingsController extends Controller
         ]);
     }
 
+    public function systems()
+    {
+        $dataPath = resource_path('js/galactic-tycoons/data');
+
+        $buildings = $this->loadJsonFile($dataPath . '/buildings.json');
+        $items = $this->loadJsonFile($dataPath . '/items.json');
+
+        return view('galactic-tycoons.buildings-systems', [
+            'buildings' => $buildings,
+            'items' => $items,
+        ]);
+    }
+
+    public function upkeep()
+    {
+        return view('galactic-tycoons.buildings-upkeep');
+    }
+
+    public function workforce()
+    {
+        return view('galactic-tycoons.buildings-workforce');
+    }
+
     public function get()
     {
         $dataPath = resource_path('js/galactic-tycoons/data');
